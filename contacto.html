@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · ALX Estudio Web</title>
+  <meta name="description" content="Cuéntame tu proyecto web o tu tienda online. Respuesta normalmente en 24 horas laborables.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=Open+Sans:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-header__logo" href="index.html" aria-label="ALX Estudio Web, inicio">
+      <img src="img/marca/logo-alx.svg" alt="ALX Estudio Web" width="1636" height="854">
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="container contact">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h1>Hablemos de tu próximo proyecto.</h1>
+      <p class="lead">Cuéntame qué necesitas, con qué plataforma trabajas y para cuándo lo necesitas. Sin compromiso.</p>
+      <dl class="contact-info">
+        <div><dt>Correo</dt><dd><a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">Alexandra Ferrera Arenas</a></dd></div>
+        <div><dt>Horario</dt><dd>Lunes a viernes, de 9:00 a 18:00</dd></div>
+        <div><dt>Respuesta</dt><dd>Normalmente en 24 horas laborables</dd></div>
+        <div><dt>Zona</dt><dd>Jerez de la Frontera, en remoto para toda España</dd></div>
+      </dl>
+    </div>
+
+    <!-- Formulario gestionado por Netlify Forms -->
+    <form class="form" name="contacto" method="POST" action="gracias.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contacto">
+      <p class="visually-hidden"><label>No rellenes este campo: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+      <h2>Cuéntame el proyecto</h2>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="empresa">Agencia o empresa</label>
+        <input id="empresa" name="empresa" type="text" autocomplete="organization">
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="tipo">Tipo de proyecto</label>
+          <select id="tipo" name="tipo">
+            <option>Maquetación desde diseño</option>
+            <option>Tienda online</option>
+            <option>Web completa</option>
+            <option>Optimización o mantenimiento</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="plataforma">Plataforma</label>
+          <select id="plataforma" name="plataforma">
+            <option>WordPress</option>
+            <option>WooCommerce</option>
+            <option>PrestaShop</option>
+            <option>Aún no lo sé</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="plazo">¿Para cuándo lo necesitas?</label>
+        <input id="plazo" name="plazo" type="text" placeholder="Por ejemplo: finales de noviembre">
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Cuéntame un poco más</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Qué hay que hacer, si hay diseño previo o en Figma…" required></textarea>
+      </div>
+
+      <!-- PENDIENTE: enlazar la política de privacidad cuando exista -->
+      <label class="check" for="privacidad">
+        <input id="privacidad" name="privacidad" type="checkbox" required>
+        <span>He leído y acepto la <a href="#">política de privacidad</a>.</span>
+      </label>
+
+      <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <img class="site-footer__logo" src="img/marca/logo-alx-blanco.svg" alt="ALX Estudio Web" width="1636" height="854">
+        <p class="site-footer__tagline">Diseño y desarrollo web con visión creativa y estratégica.</p>
+      </div>
+
+      <div>
+        <p class="site-footer__title">Contacto</p>
+        <ul class="site-footer__list">
+          <li><a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li class="site-footer__note">Jerez de la Frontera · En remoto para toda España</li>
+          <li class="site-footer__note">Lunes a viernes, de 9:00 a 18:00</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="site-footer__title">Redes</p>
+        <ul class="site-footer__list">
+          <li><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.behance.net/sandraferrera" target="_blank" rel="noopener">Behance</a></li>
+          <li><a href="https://www.figma.com/@alexandraferrer" target="_blank" rel="noopener">Figma</a></li>
+          <li><a href="https://github.com/iSaan86" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="site-footer__title">Legal</p>
+        <!-- PENDIENTE: crear las páginas legales y enlazarlas -->
+        <ul class="site-footer__list">
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>© 2026 ALX Estudio Web · Alexandra Ferrera</span>
+      <span>WordPress · WooCommerce · PrestaShop · UX/UI · SEO · Mantenimiento</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

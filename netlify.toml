@@ -1,0 +1,3 @@
+# Web estática: se publica la raíz del repositorio sin compilar
+[build]
+  publish = "."
