@@ -12,9 +12,13 @@ sobre-mi.html       Sobre mí
 servicios.html      Servicios para agencias y para negocios
 contacto.html       Contacto (formulario con Netlify Forms)
 gracias.html        Confirmación tras enviar el formulario
+aviso-legal.html    Aviso legal
+privacidad.html     Política de privacidad
+cookies.html        Política de cookies
 css/styles.css      Estilos de toda la web, ordenados por secciones
 js/main.js          Deslizadores de proyectos
-img/marca/          Logotipos ALX en SVG
+fonts/              IBM Plex Mono (500 y 600) alojada en la web, con su licencia OFL
+img/marca/          Logotipos ALX en SVG, foto de Alexandra e imagen para redes (Open Graph)
 img/proyectos/      Capturas de proyectos en WebP
 video/              Vídeos de Tubesan y Omaïlab con su portada
 netlify.toml        Configuración de publicación
@@ -41,6 +45,6 @@ Abre la carpeta en VS Code y usa la extensión Live Server, o abre `index.html` 
 
 Busca `PENDIENTE` en el código:
 
-- Foto profesional en `sobre-mi.html`.
-- Páginas legales (aviso legal, privacidad y cookies) y sus enlaces.
-- Confirmar si los precios de `servicios.html` incluyen IVA.
+- `cookies.html`: comprobar en la web publicada que no se instala ninguna cookie.
+- `privacidad.html`: actualizar los datos que se recogen si cambia el formulario y confirmar la garantía de transferencia de Netlify y Google.
+- Las etiquetas Open Graph usan `https://alx-estudioweb.netlify.app/`: cambiarlas si se pasa a un dominio propio.

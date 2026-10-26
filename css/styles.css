@@ -30,8 +30,8 @@
   --bg-media: #f5f5f5;
   --white: #ffffff;
 
-  /* Tipografía */
-  --font-body: "Segoe UI", "Open Sans", system-ui, sans-serif;
+  /* Tipografía: Segoe UI en Windows y la fuente del sistema en el resto */
+  --font-body: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", Consolas, monospace;
 
   /* Espaciado */
@@ -43,6 +43,23 @@
 
 /* 2. Base
    ========================================================================== */
+
+/* IBM Plex Mono alojada en la propia web (licencia SIL OFL en fonts/OFL.txt) */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono-600.woff2") format("woff2");
+}
 
 *,
 *::before,
@@ -766,6 +783,11 @@ p {
   margin-top: 2px;
 }
 
+.form__note {
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .form .btn {
   align-self: flex-start;
 }
@@ -955,16 +977,9 @@ p {
 }
 
 .about__photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   aspect-ratio: 4 / 5;
-  padding: 24px;
-  border: 1px solid #f3e6df;
-  background: var(--peach-soft);
-  font-size: 15px;
-  text-align: center;
-  color: var(--muted);
+  object-fit: cover;
 }
 
 .about .list,
@@ -1062,6 +1077,21 @@ p {
 
 .contact-info dd {
   margin: 0;
+}
+
+/* Páginas legales */
+.legal {
+  max-width: 800px;
+  padding-block: clamp(40px, 6vw, 80px) var(--section-space);
+}
+
+.legal h2 {
+  margin: 40px 0 0;
+  font-size: clamp(20px, 2.2vw, 24px);
+}
+
+.legal .list {
+  gap: 12px;
 }
 
 

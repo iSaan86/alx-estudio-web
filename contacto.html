@@ -5,10 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto · ALX Estudio Web</title>
   <meta name="description" content="Cuéntame tu proyecto web o tu tienda online. Respuesta normalmente en 24 horas laborables.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ALX Estudio Web">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Contacto · ALX Estudio Web">
+  <meta property="og:description" content="Cuéntame tu proyecto web o tu tienda online. Respuesta normalmente en 24 horas laborables.">
+  <meta property="og:url" content="https://alx-estudioweb.netlify.app/contacto.html">
+  <meta property="og:image" content="https://alx-estudioweb.netlify.app/img/marca/og-alx-estudio-web.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alexandra Ferrera junto al logotipo de ALX Estudio Web y el texto: webs y tiendas online diseñadas y desarrolladas con criterio">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=Open+Sans:wght@400;600;700&amp;display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -98,11 +106,12 @@
         <textarea id="mensaje" name="mensaje" placeholder="Qué hay que hacer, si hay diseño previo o en Figma…" required></textarea>
       </div>
 
-      <!-- PENDIENTE: enlazar la política de privacidad cuando exista -->
       <label class="check" for="privacidad">
         <input id="privacidad" name="privacidad" type="checkbox" required>
-        <span>He leído y acepto la <a href="#">política de privacidad</a>.</span>
+        <span>He leído y acepto la <a href="privacidad.html">política de privacidad</a>.</span>
       </label>
+
+      <p class="form__note">Responsable: Alexandra Ferrera Arenas (ALX Estudio Web). Uso tus datos solo para responder a tu mensaje y, si me lo pides, preparar un presupuesto. Puedes acceder a ellos, rectificarlos o suprimirlos, entre otros derechos, como explico en la <a href="privacidad.html">política de privacidad</a>.</p>
 
       <button type="submit" class="btn btn--primary">Enviar mensaje</button>
     </form>
@@ -131,7 +140,7 @@
         <p class="site-footer__title">Redes</p>
         <ul class="site-footer__list">
           <li><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://www.behance.net/sandraferrera" target="_blank" rel="noopener">Behance</a></li>
+          <li><a href="https://www.behance.net/alexandra-ferrera" target="_blank" rel="noopener">Behance</a></li>
           <li><a href="https://www.figma.com/@alexandraferrer" target="_blank" rel="noopener">Figma</a></li>
           <li><a href="https://github.com/iSaan86" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
@@ -139,11 +148,10 @@
 
       <div>
         <p class="site-footer__title">Legal</p>
-        <!-- PENDIENTE: crear las páginas legales y enlazarlas -->
         <ul class="site-footer__list">
-          <li><a href="#">Aviso legal</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Política de cookies</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Política de privacidad</a></li>
+          <li><a href="cookies.html">Política de cookies</a></li>
         </ul>
       </div>
     </div>
