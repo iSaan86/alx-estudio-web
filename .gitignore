@@ -2,3 +2,8 @@
 Thumbs.db
 .vscode/
 node_modules/
+
+# Contexto e instrucciones de trabajo locales (no se publican)
+CLAUDE.md
+contexto/
+.claude/
