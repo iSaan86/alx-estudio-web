@@ -31,6 +31,7 @@
       <a href="index.html">Inicio</a>
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="servicios.html">Servicios</a>
+      <a href="agencias.html">Agencias</a>
       <a href="contacto.html" aria-current="page">Contacto</a>
     </nav>
   </div>
@@ -41,7 +42,7 @@
     <div>
       <p class="eyebrow">Contacto</p>
       <h1>Hablemos de tu próximo proyecto.</h1>
-      <p class="lead">Cuéntame qué necesitas, con qué plataforma trabajas y para cuándo lo necesitas. Sin compromiso.</p>
+      <p class="lead">Tanto si tienes un negocio como si trabajas en una agencia, cuéntame qué necesitas y para cuándo. Te respondo con una propuesta, sin compromiso.</p>
       <dl class="contact-info">
         <div><dt>Correo</dt><dd><a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></dd></div>
         <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">Alexandra Ferrera Arenas</a></dd></div>
@@ -56,7 +57,7 @@
       <input type="hidden" name="form-name" value="contacto">
       <p class="visually-hidden"><label>No rellenes este campo: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
-      <h2>Cuéntame el proyecto</h2>
+      <h2>Cuéntame tu proyecto</h2>
 
       <div class="form__row">
         <div class="field">
@@ -69,28 +70,43 @@
         </div>
       </div>
 
-      <div class="field">
-        <label for="empresa">Agencia o empresa</label>
-        <input id="empresa" name="empresa" type="text" autocomplete="organization">
+      <div class="form__row">
+        <div class="field">
+          <label for="perfil">¿Quién eres?</label>
+          <select id="perfil" name="perfil">
+            <option value="">Elige una opción</option>
+            <option>Negocio, autónomo o profesional</option>
+            <option>Agencia, estudio o consultora</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="empresa">Empresa o agencia (opcional)</label>
+          <input id="empresa" name="empresa" type="text" autocomplete="organization">
+        </div>
       </div>
 
       <div class="form__row">
         <div class="field">
-          <label for="tipo">Tipo de proyecto</label>
+          <label for="tipo">¿Qué necesitas?</label>
           <select id="tipo" name="tipo">
-            <option>Maquetación desde diseño</option>
-            <option>Tienda online</option>
-            <option>Web completa</option>
-            <option>Optimización o mantenimiento</option>
-            <option>Otro</option>
+            <option value="">Elige una opción</option>
+            <option>Una web nueva</option>
+            <option>Una tienda online</option>
+            <option>Mejorar mi web o mi tienda</option>
+            <option>Mantenimiento</option>
+            <option>Un encargo para mi agencia</option>
+            <option>Aún no lo sé</option>
           </select>
         </div>
         <div class="field">
           <label for="plataforma">Plataforma</label>
           <select id="plataforma" name="plataforma">
+            <option value="">Elige una opción</option>
             <option>WordPress</option>
             <option>WooCommerce</option>
             <option>PrestaShop</option>
+            <option>No tengo web todavía</option>
             <option>Aún no lo sé</option>
           </select>
         </div>
@@ -103,7 +119,7 @@
 
       <div class="field">
         <label for="mensaje">Cuéntame un poco más</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Qué hay que hacer, si hay diseño previo o en Figma…" required></textarea>
+        <textarea id="mensaje" name="mensaje" placeholder="Qué necesitas, si ya tienes web, diseño o Figma, y cualquier detalle que me ayude a entenderlo…" required></textarea>
       </div>
 
       <label class="check" for="privacidad">

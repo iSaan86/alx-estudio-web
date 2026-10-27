@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Servicios · ALX Estudio Web</title>
-  <meta name="description" content="Servicios de diseño y desarrollo web en WordPress, WooCommerce y PrestaShop para agencias, estudios, autónomos y pequeñas empresas.">
+  <title>Servicios y precios para negocios · ALX Estudio Web</title>
+  <meta name="description" content="Creación de webs, landing pages y tiendas online, mejora de webs existentes y mantenimiento mensual para autónomos y pequeñas empresas. Qué incluye cada servicio, plazos y precios.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ALX Estudio Web">
   <meta property="og:locale" content="es_ES">
-  <meta property="og:title" content="Servicios · ALX Estudio Web">
-  <meta property="og:description" content="Servicios de diseño y desarrollo web en WordPress, WooCommerce y PrestaShop para agencias, estudios, autónomos y pequeñas empresas.">
+  <meta property="og:title" content="Servicios y precios para negocios · ALX Estudio Web">
+  <meta property="og:description" content="Webs, landing pages y tiendas online, mejora de webs existentes y mantenimiento mensual. Qué incluye cada servicio, plazos y precios.">
   <meta property="og:url" content="https://alx-estudioweb.netlify.app/servicios.html">
   <meta property="og:image" content="https://alx-estudioweb.netlify.app/img/marca/og-alx-estudio-web.jpg">
   <meta property="og:image:width" content="1200">
@@ -31,6 +31,7 @@
       <a href="index.html">Inicio</a>
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="servicios.html" aria-current="page">Servicios</a>
+      <a href="agencias.html">Agencias</a>
       <a href="contacto.html">Contacto</a>
       <a href="contacto.html" class="btn btn--primary btn--small">Hablemos</a>
     </nav>
@@ -38,121 +39,284 @@
 </header>
 
 <main id="contenido">
-<!-- Introducción -->
+  <!-- Introducción -->
   <section class="container page-intro">
-    <p class="eyebrow">Servicios</p>
-    <h1>Diseño y desarrollo web en WordPress, WooCommerce y PrestaShop.</h1>
-    <p class="lead">Trabajo como colaboradora freelance para agencias y estudios, y también directamente con autónomos y pequeñas empresas.</p>
-    <div class="btn-group">
-      <a href="#agencias" class="btn btn--primary">Para agencias y estudios</a>
-      <a href="#negocios" class="btn btn--outline">Para negocios</a>
+    <p class="eyebrow">Servicios para negocios</p>
+    <h1>Crea, mejora y mantén la web o la tienda online de tu negocio.</h1>
+    <p class="lead">Trabajo con autónomos, profesionales y pequeñas empresas. Aquí tienes qué incluye cada servicio, cuánto tarda y desde cuánto cuesta, explicado sin tecnicismos.</p>
+
+    <ul class="offer offer--nav">
+      <li class="offer__item">
+        <a class="offer__link" href="#web">Una web nueva</a>
+        <p>Para presentar tu negocio o un servicio concreto.</p>
+        <ul class="offer__prices">
+          <li>Landing page <strong>desde 270 €</strong></li>
+          <li>Web corporativa <strong>desde 550 €</strong></li>
+        </ul>
+      </li>
+      <li class="offer__item">
+        <a class="offer__link" href="#tienda">Una tienda online</a>
+        <p>Nueva o ya en marcha, en WooCommerce o PrestaShop.</p>
+        <ul class="offer__prices">
+          <li>Tienda nueva <strong>desde 1.000 €</strong></li>
+          <li>Mejora de tu tienda <strong>a consultar</strong></li>
+        </ul>
+      </li>
+      <li class="offer__item">
+        <a class="offer__link" href="#mejorar">Mejorar tu web actual</a>
+        <p>Solo lo que necesites: el SEO, la velocidad, el diseño o una función nueva.</p>
+        <ul class="offer__prices">
+          <li>Revisión y mejora <strong>a consultar</strong></li>
+        </ul>
+      </li>
+      <li class="offer__item">
+        <a class="offer__link" href="#mantenimiento">Mantenimiento</a>
+        <p>Actualizaciones, copias de seguridad y revisión, mes a mes.</p>
+        <ul class="offer__prices">
+          <li>Plan Básico <strong>30 €/mes</strong></li>
+          <li>Plan Avanzado <strong>60 €/mes</strong></li>
+        </ul>
+      </li>
+    </ul>
+    <p class="offer__note">Precios de partida, sin IVA. El presupuesto final depende del alcance de cada proyecto. ¿Trabajas en una agencia? <a href="agencias.html">Así colaboro con equipos →</a></p>
+  </section>
+
+  <!-- Crear una web -->
+  <section id="web" class="section section--grey">
+    <div class="container">
+      <div class="section__intro">
+        <p class="eyebrow">Crear una web</p>
+        <h2>Una web que explique bien lo que haces y facilite que te contacten.</h2>
+      </div>
+      <div class="services-grid services-grid--small">
+        <article class="card">
+          <h3>Landing page</h3>
+          <p class="card__label">Para presentar un servicio o conseguir contactos</p>
+          <p>Una sola página centrada en un objetivo, con un mensaje claro y un siguiente paso evidente.</p>
+          <ul class="list list--small">
+            <li>Hasta 6 secciones con diseño a medida</li>
+            <li>Adaptada a móvil y tablet</li>
+            <li>Formulario o botón de contacto</li>
+            <li>SEO básico</li>
+            <li>Dos rondas de cambios</li>
+          </ul>
+          <p class="card__meta">Plazo orientativo: 1–2 semanas</p>
+          <p class="price">Desde 270 €<small>Una página</small></p>
+        </article>
+
+        <article class="card">
+          <h3>Web corporativa</h3>
+          <p class="card__label">Para negocios que necesitan una web profesional</p>
+          <p>Diseño y desarrollo a medida, con una estructura pensada para que tus clientes entiendan qué ofreces y cómo contactarte.</p>
+          <ul class="list list--small">
+            <li>Hasta 5 páginas con diseño a medida</li>
+            <li>Adaptada a móvil y tablet</li>
+            <li>Formulario de contacto</li>
+            <li>SEO básico en cada página y alta en Search Console</li>
+            <li>Tutorial para editar tus contenidos</li>
+            <li>Dos rondas de cambios</li>
+          </ul>
+          <p class="card__meta">Plazo orientativo: 3–5 semanas · Ejemplo: <a href="https://solicitudextranjeria.com/" target="_blank" rel="noopener">Solicitud de Extranjería</a></p>
+          <p class="price">Desde 550 €<small>Hasta 5 páginas</small></p>
+        </article>
+
+        <article class="card card--dark">
+          <h3>¿No sabes qué necesitas?</h3>
+          <p>Cuéntame tu situación y te digo qué opción encaja mejor.</p>
+          <p><a href="contacto.html" class="btn btn--light">Escríbeme</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tienda online -->
+  <section id="tienda" class="section container">
+    <div class="section__intro">
+      <p class="eyebrow">Tienda online</p>
+      <h2>Vende por internet con un catálogo ordenado y una compra sencilla.</h2>
+      <p class="muted">Trabajo con WooCommerce y PrestaShop, tanto en tiendas nuevas como en tiendas que ya están vendiendo.</p>
+    </div>
+    <div class="services-grid">
+      <article class="card">
+        <h3>Tienda online nueva</h3>
+        <p class="card__label">Para empezar a vender por internet</p>
+        <p>Diseño y desarrollo de tu tienda: catálogo claro, fichas de producto que se entienden y un proceso de compra sin obstáculos.</p>
+        <ul class="list list--small">
+          <li>Hasta 5 páginas informativas y la tienda</li>
+          <li>Carga de hasta 30 productos con sus categorías</li>
+          <li>Pagos y envíos configurados</li>
+          <li>Correos de pedido para ti y para tus clientes</li>
+          <li>SEO básico de la tienda</li>
+          <li>Tutorial para gestionar productos y pedidos</li>
+        </ul>
+        <p class="card__meta">Plazo orientativo: 6–10 semanas · Ejemplo: <a href="https://tubesan.es/tienda/" target="_blank" rel="noopener">Tubesan</a></p>
+        <p class="price">Desde 1.000 €<small>Más productos o funciones, según presupuesto</small></p>
+      </article>
+
+      <article class="card">
+        <h3>Mejora de tu tienda actual</h3>
+        <p class="card__label">Para tiendas que ya están en marcha</p>
+        <p>Reviso tu tienda, te explico qué conviene cambiar y por qué, y me encargo de hacerlo.</p>
+        <ul class="list list--small">
+          <li>Fichas de producto y categorías</li>
+          <li>Navegación, filtros y proceso de compra</li>
+          <li>Velocidad, estabilidad y actualizaciones</li>
+          <li>SEO On-Page, de producto e información para Google Merchant Center</li>
+        </ul>
+        <p class="card__meta">Ejemplo: <a href="https://tendencias-pelubelleza.com/" target="_blank" rel="noopener">Tendencias PeluBelleza</a></p>
+        <p class="price">A consultar<small>Según lo que necesite tu tienda, aunque sea una sola mejora</small></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Mejorar una web existente -->
+  <section id="mejorar" class="section section--grey">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">Mejorar tu web actual</p>
+        <h2>A veces no hace falta una web nueva, sino mejorar la que tienes.</h2>
+        <p class="muted">Si tu web es lenta, se ve mal en el móvil o no lleva a nadie a contactarte, la reviso y te propongo mejoras concretas antes de plantearte rehacerla.</p>
+      </div>
+      <article class="card">
+        <h3>Revisión y mejora web</h3>
+        <p class="card__label">Para webs que ya existen</p>
+        <ul class="list list--small">
+          <li>Diseño, textos visibles y llamadas a la acción</li>
+          <li>Navegación y experiencia en móvil</li>
+          <li>Velocidad de carga y estabilidad</li>
+          <li>SEO aplicado a la web</li>
+          <li>Funciones nuevas, como reservas online</li>
+        </ul>
+        <p class="card__meta">Ejemplo: <a href="https://graciamaza.es/reservas" target="_blank" rel="noopener">Gracia de la Maza</a>, reservas online para un centro de estética</p>
+        <p class="price">A consultar<small>Según lo que necesites, aunque sea una sola mejora</small></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Mantenimiento -->
+  <section id="mantenimiento" class="section container">
+    <div class="section__intro">
+      <p class="eyebrow">Mantenimiento</p>
+      <h2>Tu web al día, con copias de seguridad y alguien que responde.</h2>
+      <p class="muted">Para webs y tiendas en WordPress. Mes a mes, sin permanencia.</p>
+    </div>
+    <div class="services-grid">
+      <article class="card">
+        <h3>Plan Básico</h3>
+        <p class="card__label">Para webs de empresa y de servicios</p>
+        <ul class="list list--small">
+          <li>Actualizaciones de WordPress, tema y plugins</li>
+          <li>Revisión de la versión de PHP y actualización cuando el alojamiento lo permite</li>
+          <li>Copia de seguridad externa semanal</li>
+          <li>Comprobación de que todo funciona tras cada actualización</li>
+          <li>Restauración desde la copia si una actualización da problemas</li>
+          <li>Respuesta en 48 horas laborables</li>
+        </ul>
+        <p class="price">30 €/mes<small>Mes a mes, sin permanencia</small></p>
+      </article>
+
+      <article class="card">
+        <h3>Plan Avanzado</h3>
+        <p class="card__label">Recomendado para tiendas online</p>
+        <ul class="list list--small">
+          <li>Todo lo del Plan Básico</li>
+          <li>Revisión de velocidad y rendimiento</li>
+          <li>Revisión de Search Console: errores de rastreo e indexación</li>
+          <li>Informe breve cada mes</li>
+          <li>Atención prioritaria: respuesta en el mismo día laborable</li>
+        </ul>
+        <p class="price">60 €/mes<small>Mes a mes, sin permanencia</small></p>
+      </article>
+    </div>
+    <p class="offer__note">Fuera de los planes, con presupuesto aparte: desarrollos nuevos, rediseños y limpieza de webs infectadas.</p>
+  </section>
+
+  <!-- Preguntas frecuentes -->
+  <section class="section section--grey">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Lo que suele preguntarse antes de empezar.</h2>
+        <p class="muted">Si tu duda no está aquí, <a href="contacto.html">escríbeme</a>.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>¿Cuánto tarda en estar lista mi web?</summary>
+          <p>Depende del servicio: una landing page, de 1 a 2 semanas; una web corporativa, de 3 a 5; una tienda online, de 6 a 10. El plazo cuenta desde que tengo los textos y las imágenes, y te lo confirmo por escrito en el presupuesto.</p>
+        </details>
+        <details>
+          <summary>¿Qué tengo que aportar yo?</summary>
+          <p>Los textos, las fotos y tu logotipo. Si te falta algo, te oriento sobre qué hace falta y cómo prepararlo.</p>
+        </details>
+        <details>
+          <summary>¿El dominio y el alojamiento están incluidos?</summary>
+          <p>No. Se contratan a tu nombre y van a tu cargo, así siempre son tuyos. Te ayudo a elegirlos y a contratarlos si no los tienes.</p>
+        </details>
+        <details>
+          <summary>¿Podré cambiar los textos yo?</summary>
+          <p>Sí. Al entregar te paso un tutorial básico para editar tus contenidos o, en una tienda, para gestionar productos y pedidos.</p>
+        </details>
+        <details>
+          <summary>¿Y si necesito más cambios?</summary>
+          <p>Cada web incluye dos rondas de cambios. Si necesitas más, o algo que amplía lo acordado, te lo presupuesto aparte antes de hacerlo.</p>
+        </details>
+        <details>
+          <summary>¿De quién es la web cuando está terminada?</summary>
+          <p>Tuya. Una vez pagada, te entrego los accesos de administrador y los archivos.</p>
+        </details>
+        <details>
+          <summary>¿Cómo se paga?</summary>
+          <p>En los proyectos, el 50 % al aceptar el presupuesto y el 50 % a la entrega. El mantenimiento se paga mes a mes.</p>
+        </details>
+        <details>
+          <summary>¿Puedes mantener una web que no hiciste tú?</summary>
+          <p>Sí, con los mismos planes de mantenimiento. Si además quieres que revise la web a fondo y te proponga mejoras, eso es otro servicio: la revisión y mejora web.</p>
+        </details>
+        <details>
+          <summary>¿Los precios incluyen IVA?</summary>
+          <p>No. A los precios de esta página hay que sumar el IVA (21 %).</p>
+        </details>
+        <details>
+          <summary>¿Trabajas fuera de Jerez?</summary>
+          <p>Sí. Trabajo en remoto con negocios de toda España y, en Jerez y alrededores, también en persona.</p>
+        </details>
+        <details>
+          <summary>¿Usas inteligencia artificial?</summary>
+          <p>Sí, como herramienta: para agilizar tareas repetitivas, preparar recursos y revisar textos. El criterio, el diseño y la revisión final de lo que te entrego son siempre míos.</p>
+        </details>
+        <details>
+          <summary>¿Con qué herramientas trabajas?</summary>
+          <p>WordPress, con Elementor, Divi o WPBakery, y WooCommerce o PrestaShop para las tiendas online. Si tu web ya usa una de ellas, sigo trabajando con la tuya.</p>
+        </details>
+      </div>
     </div>
   </section>
 
   <!-- Agencias -->
-  <section id="agencias" class="section section--peach">
-    <div class="container">
-      <div class="section__intro">
-        <p class="eyebrow">Para agencias, estudios y consultoras</p>
-        <h2>Apoyo freelance para sacar adelante los proyectos web de tus clientes.</h2>
-        <p class="muted">Para agencias que venden webs y tiendas online y necesitan más capacidad o un perfil web en un proyecto concreto.</p>
+  <section class="section section--peach">
+    <div class="container grid-2 align-center">
+      <div>
+        <p class="eyebrow">Para agencias</p>
+        <h2>¿Trabajas en una agencia o un estudio?</h2>
       </div>
-      <div class="services-grid">
-        <article class="card">
-          <h3>Maquetación desde diseño o Figma</h3>
-          <p>Llevo tu diseño a WordPress tal y como lo has pensado, adaptado a ordenador, tablet y móvil.</p>
-          <ul class="list">
-          <li>Elementor Pro, Divi o WPBakery</li>
-          <li>Implementación desde mockups o Figma</li>
-          <li>Diseño responsive revisado</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Tiendas online y fichas de producto</h3>
-          <p>Freelance WooCommerce para proyectos web de e-commerce, también en PrestaShop.</p>
-          <ul class="list">
-          <li>Plantillas y fichas de producto</li>
-          <li>Catálogo, categorías y filtros</li>
-          <li>Mejora de tiendas existentes</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Webs completas para tus clientes</h3>
-          <p>Me encargo del diseño y el desarrollo de una web corporativa o una landing page para un cliente de tu agencia.</p>
-          <ul class="list">
-          <li>Estructura y diseño de interfaz</li>
-          <li>Desarrollo en WordPress</li>
-          <li>SEO On-Page básico</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Optimización y mantenimiento</h3>
-          <p>Mantengo y mejoro las webs de tus clientes para que sigan funcionando bien.</p>
-          <ul class="list">
-          <li>Actualizaciones y corrección de errores</li>
-          <li>Rendimiento y velocidad de carga</li>
-          <li>SEO On-Page y de producto</li>
-          </ul>
-        </article>
-      </div>
-      <div class="agency-note">
-        <p><strong>Precio: según encargo.</strong> Cada colaboración se valora según el alcance, la plataforma y los plazos.</p>
-        <a href="contacto.html" class="btn btn--primary">Cuéntame el encargo</a>
+      <div>
+        <p>También colaboro con agencias, estudios y consultoras: implemento sus diseños, desarrollo tiendas y mejoro las webs de sus clientes.</p>
+        <p class="band__link"><a href="agencias.html" class="btn btn--outline">Así colaboro con agencias</a></p>
       </div>
     </div>
   </section>
 
-  <!-- Negocios -->
-  <section id="negocios" class="section container">
-    <div class="section__intro">
-      <p class="eyebrow">Para autónomos y pequeñas empresas</p>
-      <h2>Crea, renueva o mejora la web o la tienda online de tu negocio.</h2>
-      <p class="muted">Precios de partida, sin IVA. El presupuesto final depende del alcance de cada proyecto.</p>
-    </div>
-    <div class="services-grid services-grid--small">
-      <article class="card">
-        <h3>Web corporativa</h3>
-        <p class="card__label">Para negocios que necesitan una web profesional</p>
-        <p>Diseño y desarrollo a medida, con una estructura pensada para que tus clientes entiendan qué ofreces y cómo contactarte.</p>
-        <p class="price">Desde 550 €<small>Proyecto a medida</small></p>
-      </article>
-
-      <article class="card">
-        <h3>Landing page</h3>
-        <p class="card__label">Para presentar un servicio o conseguir contactos</p>
-        <p>Una página centrada en un solo objetivo, con un mensaje claro y un siguiente paso evidente.</p>
-        <p class="price">Desde 270 €<small>Una página</small></p>
-      </article>
-
-      <article class="card">
-        <h3>Tienda online</h3>
-        <p class="card__label">Para vender por internet</p>
-        <p>Creación o mejora de tu tienda con WooCommerce o PrestaShop: catálogo ordenado, fichas claras y compra sencilla.</p>
-        <p class="price">Desde 1.000 €<small>Proyecto a medida</small></p>
-      </article>
-
-      <article class="card">
-        <h3>Optimización web</h3>
-        <p class="card__label">Para webs lentas o que no funcionan bien</p>
-        <p>Reviso tu web actual y te propongo mejoras técnicas y visuales, antes de plantearte rehacerla.</p>
-        <p class="price">A consultar<small>Según necesidades</small></p>
-      </article>
-
-      <article class="card">
-        <h3>Mantenimiento web</h3>
-        <p class="card__label">Para despreocuparte de la parte técnica</p>
-        <p>Actualizaciones, revisión y soporte mensual, con modalidades adaptadas a lo que necesitas.</p>
-        <p class="price">Desde 30 €/mes<small>Según modalidad</small></p>
-      </article>
-
-      <article class="card card--dark">
-        <h3>¿No sabes qué necesitas?</h3>
-        <p>Cuéntame tu situación y te digo qué opción encaja mejor.</p>
-        <p><a href="contacto.html" class="btn btn--light">Escríbeme</a></p>
-      </article>
+  <!-- Llamada final -->
+  <section class="section container">
+    <div class="cta">
+      <div>
+        <h2>¿Hablamos de tu web?</h2>
+        <p class="lead">Cuéntame qué necesitas y te respondo normalmente en 24 horas laborables, con una propuesta por escrito.</p>
+      </div>
+      <div class="cta__actions">
+        <a href="contacto.html" class="btn btn--primary">Cuéntame tu proyecto</a>
+        <p class="muted small">O escríbeme directamente a <a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></p>
+      </div>
     </div>
   </section>
 </main>

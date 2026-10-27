@@ -18,6 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -31,6 +32,7 @@
       <a href="index.html" aria-current="page">Inicio</a>
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="servicios.html">Servicios</a>
+      <a href="agencias.html">Agencias</a>
       <a href="contacto.html">Contacto</a>
       <a href="contacto.html" class="btn btn--primary btn--small">Hablemos</a>
     </nav>
@@ -49,8 +51,7 @@
           <a href="contacto.html" class="btn btn--primary">Cuéntame tu proyecto</a>
           <a href="#servicios" class="btn btn--outline">Ver servicios y precios</a>
         </div>
-        <!-- PENDIENTE: enlazar a agencias.html cuando exista -->
-        <p class="hero__agency">¿Trabajas en una agencia? <a href="servicios.html#agencias">Así colaboro con equipos →</a></p>
+        <p class="hero__agency">¿Trabajas en una agencia? <a href="agencias.html">Así colaboro con equipos →</a></p>
         <p class="hero__location"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Desde Jerez de la Frontera, en remoto para toda España.</p>
       </div>
       <img class="hero__mark" src="img/marca/isotipo-alx.svg" alt="" width="932" height="854">
@@ -60,24 +61,60 @@
   <!-- Proyectos destacados -->
   <section id="proyectos" class="section container">
     <div class="section__intro">
-      <p class="eyebrow">Proyectos</p>
+      <p class="eyebrow">Proyectos destacados</p>
       <h2>Trabajo real, y lo que hice en cada caso.</h2>
-      <p class="muted">Tiendas online, webs de servicios y colaboraciones con agencias. En cada proyecto explico cuál fue mi parte.</p>
+      <p class="muted">Tiendas online, webs de servicios y colaboraciones con agencias. Desliza para ver más imágenes y haz clic en cualquiera para ampliarla.</p>
     </div>
 
     <article class="case">
       <div class="case__media">
-        <video src="video/tubesan-inicio.mp4" poster="video/tubesan-inicio-poster.jpg" width="1200" height="720" controls muted playsinline preload="none" aria-label="Recorrido por la página de inicio de la tienda Tubesan"></video>
+        <div class="gallery" role="region" aria-label="Imágenes y vídeos de Tubesan">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <video src="video/tubesan-inicio.mp4" poster="video/tubesan-inicio-poster.jpg" width="1200" height="720" controls muted playsinline preload="none" aria-label="Recorrido por la página de inicio de la tienda Tubesan"></video>
+              <figcaption>Recorrido por la página de inicio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tubesan-mockup.webp"><img src="img/proyectos/tubesan-mockup.webp" alt="Ficha de producto de Tubesan en ordenador y carrito en tablet y móvil" width="1200" height="900" loading="lazy"></a>
+              <figcaption>Ficha de producto y carrito en distintos dispositivos</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tubesan-navegacion.webp"><img src="img/proyectos/tubesan-navegacion.webp" alt="Menú desplegable de categorías de Tubesan" width="1238" height="641" loading="lazy"></a>
+              <figcaption>Menú de categorías</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tubesan-categorias.webp"><img src="img/proyectos/tubesan-categorias.webp" alt="Página de categoría de Tubesan con filtros" width="1238" height="816" loading="lazy"></a>
+              <figcaption>Categoría con filtros</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <video src="video/tubesan-ficha.mp4" poster="video/tubesan-ficha-poster.jpg" width="1200" height="675" controls muted playsinline preload="none" aria-label="Recorrido por una ficha de producto de Tubesan"></video>
+              <figcaption>Recorrido por una ficha de producto</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tubesan-ficha-1.webp"><img src="img/proyectos/tubesan-ficha-1.webp" alt="Ficha de producto de Tubesan con galería de imágenes" width="1238" height="825" loading="lazy"></a>
+              <figcaption>Plantilla de ficha con galería</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tubesan-ficha-2.webp"><img src="img/proyectos/tubesan-ficha-2.webp" alt="Ficha de producto de Tubesan con descripción y características" width="1238" height="824" loading="lazy"></a>
+              <figcaption>Descripción y características del producto</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tubesan-movil.webp"><img src="img/proyectos/tubesan-movil.webp" alt="Tubesan en móvil y tablet" width="1238" height="881" loading="lazy"></a>
+              <figcaption>Adaptación a móvil y tablet</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
       <div>
         <p class="tag">Tienda online · WooCommerce</p>
         <h3 class="case__title">Tubesan</h3>
-        <p class="case__meta">Desarrolladora web y diseñadora digital · 2025</p>
-        <p class="case__text">Nueva tienda online para un negocio de Jerez, con unos 1.500 productos de baño, climatización y calefacción. Participé en el diseño, el desarrollo y el lanzamiento.</p>
+        <p class="case__meta">Desarrolladora web y diseñadora digital · Abril–octubre de 2025</p>
+        <p class="case__text">Diseñé y desarrollé la nueva tienda online de un negocio de Jerez, con unos 1.500 productos de baño, climatización y calefacción, desde la estructura hasta el lanzamiento.</p>
         <ul class="list list--small">
-          <li>Arquitectura de la tienda, categorías, navegación y filtros</li>
-          <li>Plantillas de producto según el tipo de artículo</li>
-          <li>SEO, Merchant Center y revisión de las campañas de Google Ads tras la migración</li>
+          <li>Propuestas de diseño, arquitectura de la tienda, categorías, navegación y filtros</li>
+          <li>Layouts y plantillas de producto según el tipo de artículo, con Elementor Pro y adaptados a móvil</li>
+          <li>Banners, recursos gráficos y tratamiento de las imágenes de producto</li>
+          <li>Pagos, seguridad, SEO, Merchant Center y revisión de Google Ads tras la migración</li>
         </ul>
         <a href="https://tubesan.es/tienda/" class="btn btn--outline" target="_blank" rel="noopener">Ver la tienda</a>
       </div>
@@ -85,7 +122,26 @@
 
     <article class="case case--reverse">
       <div class="case__media">
-        <img src="img/proyectos/extranjeria-responsive.webp" alt="Web de Solicitud de Extranjería en tablet y móvil" width="900" height="641" loading="lazy">
+        <div class="gallery" role="region" aria-label="Imágenes de Solicitud de Extranjería">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <a href="img/proyectos/extranjeria-responsive.webp"><img src="img/proyectos/extranjeria-responsive.webp" alt="Web de Solicitud de Extranjería en tablet y móvil" width="900" height="641" loading="lazy"></a>
+              <figcaption>La web en tablet y móvil</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/extranjeria-inicio.webp"><img src="img/proyectos/extranjeria-inicio.webp" alt="Página de inicio de Solicitud de Extranjería" width="900" height="600" loading="lazy"></a>
+              <figcaption>Página de inicio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/extranjeria-secciones.webp"><img src="img/proyectos/extranjeria-secciones.webp" alt="Llamada a la acción y ventajas en la web de Solicitud de Extranjería" width="900" height="600" loading="lazy"></a>
+              <figcaption>Llamada a la acción y ventajas</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/extranjeria-formulario.webp"><img src="img/proyectos/extranjeria-formulario.webp" alt="Formulario de estudio del caso de Solicitud de Extranjería" width="900" height="600" loading="lazy"></a>
+              <figcaption>Formulario de estudio del caso</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
       <div>
         <p class="tag">Web de servicios · WordPress</p>
@@ -103,7 +159,38 @@
 
     <article class="case">
       <div class="case__media">
-        <video src="video/omailab-ficha.mp4" poster="video/omailab-ficha-poster.jpg" width="1100" height="788" controls muted playsinline preload="none" aria-label="Recorrido por una ficha de producto de Omaïlab en escritorio"></video>
+        <div class="gallery" role="region" aria-label="Imágenes y vídeos de Omaïlab">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <video src="video/omailab-ficha.mp4" poster="video/omailab-ficha-poster.jpg" width="1100" height="788" controls muted playsinline preload="none" aria-label="Recorrido por una ficha de producto de Omaïlab en escritorio"></video>
+              <figcaption>Recorrido por la ficha en escritorio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/omailab-diseno-agencia.webp"><img src="img/proyectos/omailab-diseno-agencia.webp" alt="Diseño de escritorio de la ficha de producto facilitado por la agencia" width="558" height="542" loading="lazy"></a>
+              <figcaption>El diseño de partida de la agencia</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/omailab-ficha-publicada.webp"><img src="img/proyectos/omailab-ficha-publicada.webp" alt="Ficha de producto publicada en Omaïlab con contenido real" width="558" height="542" loading="lazy"></a>
+              <figcaption>La ficha publicada, con contenido real</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/omailab-mockup-ficha.webp"><img src="img/proyectos/omailab-mockup-ficha.webp" alt="Ficha de producto de Omaïlab en un portátil" width="1200" height="800" loading="lazy"></a>
+              <figcaption>Bloque de compra de la ficha</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/omailab-siete-fichas.webp"><img src="img/proyectos/omailab-siete-fichas.webp" alt="Las siete fichas de producto de Omaïlab" width="1200" height="500" loading="lazy"></a>
+              <figcaption>Siete productos con la misma plantilla</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/omailab-mockup-movil.webp"><img src="img/proyectos/omailab-mockup-movil.webp" alt="Ficha de Omaïlab en tablet y móvil" width="1200" height="855" loading="lazy"></a>
+              <figcaption>Adaptación propia a tablet y móvil</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/omailab-iconos.webp"><img src="img/proyectos/omailab-iconos.webp" alt="Menú visual de categorías con iconos en Omaïlab" width="838" height="374" loading="lazy"></a>
+              <figcaption>Barra superior y menú de categorías</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
       <div>
         <p class="tag">Colaboración con agencia · WooCommerce</p>
@@ -117,16 +204,6 @@
         </ul>
         <a href="https://www.omailab.com/" class="btn btn--outline" target="_blank" rel="noopener">Ver la tienda</a>
       </div>
-      <div class="compare">
-        <figure>
-          <img src="img/proyectos/omailab-diseno-agencia.webp" alt="Diseño de escritorio de la ficha de producto facilitado por la agencia" width="558" height="542" loading="lazy">
-          <figcaption>Diseño de la agencia</figcaption>
-        </figure>
-        <figure>
-          <img src="img/proyectos/omailab-ficha-publicada.webp" alt="Ficha de producto publicada en Omaïlab con contenido real" width="558" height="542" loading="lazy">
-          <figcaption>Ficha publicada</figcaption>
-        </figure>
-      </div>
     </article>
   </section>
 
@@ -135,31 +212,43 @@
     <div class="container">
       <div class="section__intro">
         <p class="eyebrow">Qué hago</p>
-        <h2>Lo que puedo hacer por tu web o tu tienda online.</h2>
+        <h2>Lo que puedo hacer por tu negocio.</h2>
       </div>
       <div class="offer">
         <article class="offer__item">
           <h3>Webs corporativas y landing pages</h3>
           <p>Una web clara que explique qué ofreces y facilite que te contacten.</p>
-          <p class="offer__price">Desde 270 €</p>
+          <ul class="offer__prices">
+            <li>Landing page <strong>desde 270 €</strong></li>
+            <li>Web corporativa <strong>desde 550 €</strong></li>
+          </ul>
         </article>
         <article class="offer__item">
           <h3>Tiendas online</h3>
           <p>WooCommerce o PrestaShop, con el catálogo ordenado, fichas claras y una compra sencilla.</p>
-          <p class="offer__price">Desde 1.000 €</p>
+          <ul class="offer__prices">
+            <li>Tienda nueva <strong>desde 1.000 €</strong></li>
+            <li>Mejora de tu tienda <strong>a consultar</strong></li>
+          </ul>
         </article>
         <article class="offer__item">
           <h3>Mejora y mantenimiento</h3>
-          <p>Reviso la web que ya tienes, la optimizo y la mantengo al día.</p>
-          <p class="offer__price">Mantenimiento desde 30 €/mes</p>
+          <p>Reviso la web que ya tienes, la mejoro en lo que necesite y la mantengo al día.</p>
+          <ul class="offer__prices">
+            <li>Revisión y mejora <strong>a consultar</strong></li>
+            <li>Mantenimiento <strong>desde 30 €/mes</strong></li>
+          </ul>
         </article>
         <article class="offer__item">
           <h3>Apoyo a agencias</h3>
           <p>Maquetación desde diseño o Figma, tiendas y webs completas para tus clientes.</p>
-          <p class="offer__price">Según encargo</p>
+          <ul class="offer__prices">
+            <li>Por horas <strong>30 €/h</strong></li>
+            <li>Proyecto <strong>precio cerrado</strong></li>
+          </ul>
         </article>
       </div>
-      <p class="offer__note">Precios de partida, sin IVA. <a href="servicios.html">Ver todos los servicios y qué incluye cada uno</a></p>
+      <p class="offer__note">Precios de partida, sin IVA. <a href="servicios.html">Ver los servicios para negocios</a> o <a href="agencias.html#tarifas">las tarifas para agencias</a></p>
     </div>
   </section>
 
@@ -171,17 +260,43 @@
     </div>
     <div class="grid-auto">
       <article class="project-card">
-        <img src="img/proyectos/tendencias-inicio.webp" alt="Página de inicio de Tendencias PeluBelleza" width="900" height="600" loading="lazy">
+        <div class="gallery" role="region" aria-label="Imágenes de Tendencias PeluBelleza">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tendencias-inicio.webp"><img src="img/proyectos/tendencias-inicio.webp" alt="Página de inicio de Tendencias PeluBelleza" width="900" height="600" loading="lazy"></a>
+              <figcaption>Página de inicio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tendencias-categoria.webp"><img src="img/proyectos/tendencias-categoria.webp" alt="Categoría con filtros y menú desplegable de Tendencias PeluBelleza" width="900" height="600" loading="lazy"></a>
+              <figcaption>Categoría con filtros y menú</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tendencias-carrito.webp"><img src="img/proyectos/tendencias-carrito.webp" alt="Carrito en tablet y página Sobre nosotros en móvil de Tendencias PeluBelleza" width="900" height="641" loading="lazy"></a>
+              <figcaption>Carrito y Sobre nosotros</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/tendencias-responsive.webp"><img src="img/proyectos/tendencias-responsive.webp" alt="Inicio en tablet y categoría en móvil de Tendencias PeluBelleza" width="900" height="641" loading="lazy"></a>
+              <figcaption>Tablet y móvil</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="project-card__body">
-          <p class="tag">Optimización y mantenimiento · WooCommerce</p>
+          <p class="tag">Rediseño y mantenimiento · WooCommerce</p>
           <h3>Tendencias PeluBelleza</h3>
-          <p>Auditoría, rendimiento, experiencia de usuario, SEO de producto y mantenimiento continuado de la tienda.</p>
+          <p>Rediseño con recursos gráficos propios, auditoría técnica, rendimiento, experiencia de usuario, SEO On-Page y mantenimiento continuado de la tienda.</p>
           <p class="project-card__link"><a href="https://tendencias-pelubelleza.com/" target="_blank" rel="noopener">Ver web →</a></p>
         </div>
       </article>
 
       <article class="project-card">
-        <img src="img/proyectos/gracia-reservas.webp" alt="Página de reservas de Gracia de la Maza en tablet y móvil" width="900" height="641" loading="lazy">
+        <div class="gallery" role="region" aria-label="Imágenes de Gracia de la Maza">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <a href="img/proyectos/gracia-reservas.webp"><img src="img/proyectos/gracia-reservas.webp" alt="Página de reservas de Gracia de la Maza en tablet y móvil" width="900" height="641" loading="lazy"></a>
+              <figcaption>Página de reservas en tablet y móvil</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="project-card__body">
           <p class="tag">Reservas online · WordPress</p>
           <h3>Gracia de la Maza</h3>
@@ -191,7 +306,22 @@
       </article>
 
       <article class="project-card">
-        <img src="img/proyectos/dragon-inicio.webp" alt="Página de inicio de The Dragon Chamber Games" width="900" height="600" loading="lazy">
+        <div class="gallery" role="region" aria-label="Imágenes de The Dragon Chamber Games">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <a href="img/proyectos/dragon-inicio.webp"><img src="img/proyectos/dragon-inicio.webp" alt="Página de inicio de The Dragon Chamber Games" width="900" height="600" loading="lazy"></a>
+              <figcaption>Página de inicio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/dragon-categoria.webp"><img src="img/proyectos/dragon-categoria.webp" alt="Categoría Warhammer con subcategorías en The Dragon Chamber Games" width="900" height="600" loading="lazy"></a>
+              <figcaption>Categoría con subcategorías</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/dragon-responsive.webp"><img src="img/proyectos/dragon-responsive.webp" alt="The Dragon Chamber Games en tablet y móvil" width="900" height="641" loading="lazy"></a>
+              <figcaption>Tablet y móvil</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="project-card__body">
           <p class="tag">Tienda online · PrestaShop 9</p>
           <h3>The Dragon Chamber Games</h3>
@@ -201,7 +331,18 @@
       </article>
 
       <article class="project-card">
-        <img src="img/proyectos/farmacia-inicio.webp" alt="Página de inicio de Farmacia Morillo Conil" width="900" height="555" loading="lazy">
+        <div class="gallery" role="region" aria-label="Imágenes de Farmacia Morillo Conil">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <a href="img/proyectos/farmacia-inicio.webp"><img src="img/proyectos/farmacia-inicio.webp" alt="Página de inicio de Farmacia Morillo Conil" width="900" height="555" loading="lazy"></a>
+              <figcaption>Página de inicio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/farmacia-responsive.webp"><img src="img/proyectos/farmacia-responsive.webp" alt="Secciones de Farmacia Morillo Conil en tablet y móvil" width="900" height="555" loading="lazy"></a>
+              <figcaption>Secciones en tablet y móvil</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="project-card__body">
           <p class="tag">Entorno de agencia · WordPress</p>
           <h3>Farmacia Morillo Conil</h3>
@@ -211,7 +352,22 @@
       </article>
 
       <article class="project-card">
-        <img src="img/proyectos/dearte-inicio.webp" alt="Página de inicio de Alexandra Ferrera De Arte" width="900" height="600" loading="lazy">
+        <div class="gallery" role="region" aria-label="Imágenes de Alexandra Ferrera De Arte">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <a href="img/proyectos/dearte-inicio.webp"><img src="img/proyectos/dearte-inicio.webp" alt="Página de inicio de Alexandra Ferrera De Arte" width="900" height="600" loading="lazy"></a>
+              <figcaption>Página de inicio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/dearte-carboncillo.webp"><img src="img/proyectos/dearte-carboncillo.webp" alt="Página de retrato a carboncillo en tablet y móvil" width="900" height="641" loading="lazy"></a>
+              <figcaption>Página de retrato a carboncillo</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/dearte-faq.webp"><img src="img/proyectos/dearte-faq.webp" alt="Preguntas frecuentes de la web Alexandra Ferrera De Arte" width="900" height="600" loading="lazy"></a>
+              <figcaption>Preguntas frecuentes</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="project-card__body">
           <p class="tag">Proyecto propio · WordPress y Divi</p>
           <h3>Alexandra Ferrera De Arte</h3>
@@ -221,7 +377,18 @@
       </article>
 
       <article class="project-card">
-        <img src="img/proyectos/playas-inicio.webp" alt="Página de inicio de Las Playas de Cádiz" width="900" height="600" loading="lazy">
+        <div class="gallery" role="region" aria-label="Imágenes de Las Playas de Cádiz">
+          <div class="gallery__track" tabindex="0">
+            <figure class="gallery__slide">
+              <a href="img/proyectos/playas-inicio.webp"><img src="img/proyectos/playas-inicio.webp" alt="Página de inicio de Las Playas de Cádiz" width="900" height="600" loading="lazy"></a>
+              <figcaption>Página de inicio</figcaption>
+            </figure>
+            <figure class="gallery__slide">
+              <a href="img/proyectos/playas-responsive.webp"><img src="img/proyectos/playas-responsive.webp" alt="Ficha de playa en tablet y portada en móvil de Las Playas de Cádiz" width="900" height="641" loading="lazy"></a>
+              <figcaption>Ficha de playa y portada en móvil</figcaption>
+            </figure>
+          </div>
+        </div>
         <div class="project-card__body">
           <p class="tag">Proyecto propio · React y Vite</p>
           <h3>Las Playas de Cádiz</h3>
@@ -243,11 +410,10 @@
       <div>
         <ul class="list">
           <li>Implemento tu diseño con fidelidad, también desde Figma.</li>
-          <li>Trabajo con Elementor Pro, Divi, WPBakery, WooCommerce y PrestaShop.</li>
+          <li>Trabajo con Elementor, Divi, WPBakery, WooCommerce y PrestaShop.</li>
           <li>Comunico avances y dudas a tiempo, y reviso cada entrega en ordenador, tablet y móvil.</li>
         </ul>
-        <!-- PENDIENTE: enlazar a agencias.html cuando exista -->
-        <p class="band__link"><a href="servicios.html#agencias" class="btn btn--outline">Así colaboro con agencias</a></p>
+        <p class="band__link"><a href="agencias.html" class="btn btn--outline">Así colaboro con agencias</a></p>
       </div>
     </div>
   </section>
