@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ALX Estudio Web · Apoyo freelance en diseño y desarrollo web para agencias</title>
-  <meta name="description" content="Desarrolladora web freelance para agencias y estudios. Diseño, desarrollo y mantenimiento de webs y tiendas online en WordPress, WooCommerce y PrestaShop, desde Jerez de la Frontera.">
+  <title>ALX Estudio Web · Diseño y desarrollo web y tiendas online en Jerez</title>
+  <meta name="description" content="Diseño y desarrollo de webs y tiendas online en WordPress, WooCommerce y PrestaShop para negocios y agencias. Desde Jerez de la Frontera, en remoto para toda España.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ALX Estudio Web">
   <meta property="og:locale" content="es_ES">
@@ -18,7 +18,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -39,270 +38,152 @@
 </header>
 
 <main id="contenido">
-<!-- Portada -->
-  <section class="container hero">
-    <div>
-      <p class="eyebrow">WordPress · WooCommerce · PrestaShop</p>
-      <h1>Apoyo freelance en diseño y desarrollo web para agencias y estudios.</h1>
-      <p class="lead">Soy Alexandra, desarrolladora web freelance para agencias. Me sumo a tu equipo para sacar adelante webs y tiendas online, desde el diseño hasta la entrega.</p>
-      <div class="btn-group">
-        <a href="contacto.html" class="btn btn--primary">Hablemos de tu próximo proyecto</a>
-        <a href="#proyectos" class="btn btn--outline">Ver proyectos</a>
-      </div>
-      <p class="hero__location"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7d5fa6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Desde Jerez de la Frontera, en remoto con equipos de toda España.</p>
-    </div>
-    <figure>
-      <div class="browser">
-        <div class="browser__bar" aria-hidden="true"><span></span><span></span><span></span></div>
-        <img src="img/proyectos/tubesan-ficha-hero.webp" alt="Ficha de producto de la tienda online Tubesan, desarrollada en WooCommerce" width="1088" height="680">
-      </div>
-      <figcaption class="caption">Tubesan · Tienda online en WooCommerce</figcaption>
-    </figure>
-  </section>
-
-  <!-- Beneficios -->
-  <section class="section section--peach">
-    <div class="container">
-      <p class="eyebrow">Qué gana tu agencia</p>
-      <h2 class="section__intro">Una colaboradora freelance WordPress para agencias que necesitan llegar a más proyectos.</h2>
-      <div class="grid-3">
-        <div>
-          <p class="step-number">01</p>
-          <h3>Más capacidad, misma plantilla</h3>
-          <p>Más capacidad para tu agencia sin necesidad de ampliar la plantilla. Me incorporo cuando coinciden proyectos o necesitas un perfil web.</p>
+  <!-- Portada -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <p class="eyebrow">Diseño y desarrollo web</p>
+        <h1>Webs y tiendas online diseñadas y desarrolladas con criterio.</h1>
+        <p class="lead">Soy Alexandra, diseñadora y desarrolladora web. Creo, renuevo y mantengo webs y tiendas online en WordPress, WooCommerce y PrestaShop para negocios, y colaboro con agencias que necesitan apoyo en sus proyectos.</p>
+        <div class="btn-group">
+          <a href="contacto.html" class="btn btn--primary">Cuéntame tu proyecto</a>
+          <a href="#servicios" class="btn btn--outline">Ver servicios y precios</a>
         </div>
-        <div>
-          <p class="step-number">02</p>
-          <h3>Entregas fieles a tu diseño</h3>
-          <p>Respeto tu diseño y lo implemento con criterio visual, para que tu equipo no tenga que corregir las entregas.</p>
-        </div>
-        <div>
-          <p class="step-number">03</p>
-          <h3>Técnica y criterio visual</h3>
-          <p>Combino conocimientos técnicos y criterio visual para desarrollar y mejorar webs que funcionan bien y se ven bien.</p>
-        </div>
+        <!-- PENDIENTE: enlazar a agencias.html cuando exista -->
+        <p class="hero__agency">¿Trabajas en una agencia? <a href="servicios.html#agencias">Así colaboro con equipos →</a></p>
+        <p class="hero__location"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Desde Jerez de la Frontera, en remoto para toda España.</p>
       </div>
+      <img class="hero__mark" src="img/marca/isotipo-alx.svg" alt="" width="932" height="854">
     </div>
   </section>
 
-  <!-- Proyectos -->
+  <!-- Proyectos destacados -->
   <section id="proyectos" class="section container">
     <div class="section__intro">
-      <p class="eyebrow">Trabajo real</p>
-      <h2>Proyectos web y tiendas online en los que he trabajado.</h2>
-      <p class="muted">En cada caso explico cuál fue mi contribución.</p>
+      <p class="eyebrow">Proyectos</p>
+      <h2>Trabajo real, y lo que hice en cada caso.</h2>
+      <p class="muted">Tiendas online, webs de servicios y colaboraciones con agencias. En cada proyecto explico cuál fue mi parte.</p>
     </div>
 
-    <!-- Caso destacado: Tubesan -->
-    <article>
-      <div class="case">
-        <div class="case__media">
-          <video src="video/tubesan-inicio.mp4" poster="video/tubesan-inicio-poster.jpg" width="1200" height="720" autoplay muted loop playsinline preload="metadata" aria-label="Recorrido por la página de inicio de la tienda Tubesan"></video>
-        </div>
-        <div>
-          <span class="tag">Tienda online · WooCommerce</span>
-          <h3 class="case__title">Tubesan</h3>
-          <p class="case__text">Nueva tienda online, desarrollada prácticamente desde cero para sustituir la anterior, con un catálogo de unos 1.500 productos.</p>
-          <dl class="facts">
-            <div><dt>Rol</dt><dd>Desarrolladora web y diseñadora digital</dd></div>
-            <div><dt>Periodo</dt><dd>Abril – octubre 2025</dd></div>
-            <div><dt>Plataforma</dt><dd>WordPress, WooCommerce y Elementor Pro</dd></div>
-            <div><dt>Catálogo</dt><dd>≈ 1.500 productos</dd></div>
-          </dl>
-          <ul class="list list--small">
-            <li>Arquitectura, categorías, navegación y filtros</li>
-            <li>Layouts y plantillas según el tipo de producto</li>
-            <li>Banners, tratamiento y optimización de imágenes</li>
-            <li>SEO, Merchant Center y revisión de campañas activas de Google Ads</li>
-          </ul>
-          <a href="https://tubesan.es/tienda/" class="btn btn--outline" target="_blank" rel="noopener">Ver la tienda</a>
-        </div>
+    <article class="case">
+      <div class="case__media">
+        <video src="video/tubesan-inicio.mp4" poster="video/tubesan-inicio-poster.jpg" width="1200" height="720" controls muted playsinline preload="none" aria-label="Recorrido por la página de inicio de la tienda Tubesan"></video>
       </div>
-      <div class="slider slider--featured" data-per-desktop="2" data-gap="16" role="region" aria-roledescription="carrusel" aria-label="Imágenes del proyecto Tubesan">
-        <div class="slider__viewport">
-          <div class="slider__track">
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/tubesan-navegacion.webp" alt="Menú desplegable de categorías de Tubesan" width="1238" height="641" loading="lazy"></div>
-              <figcaption>Arquitectura y navegación</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/tubesan-categorias.webp" alt="Página de categoría de Tubesan con filtros" width="1238" height="816" loading="lazy"></div>
-              <figcaption>Categorías y filtros</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/tubesan-ficha-1.webp" alt="Ficha de producto de Tubesan con galería de imágenes" width="1238" height="825" loading="lazy"></div>
-              <figcaption>Fichas de producto</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/tubesan-ficha-2.webp" alt="Ficha de producto de Tubesan con descripción y características" width="1238" height="824" loading="lazy"></div>
-              <figcaption>Plantillas según el tipo de producto</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/tubesan-movil.webp" alt="Tubesan en móvil y tablet" width="1238" height="881" loading="lazy"></div>
-              <figcaption>Adaptación a móvil y tablet</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="slider__controls">
-          <div class="slider__dots"></div>
-          <div class="slider__arrows">
-            <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-            <button type="button" class="slider__arrow slider__arrow--next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          </div>
-        </div>
+      <div>
+        <p class="tag">Tienda online · WooCommerce</p>
+        <h3 class="case__title">Tubesan</h3>
+        <p class="case__meta">Desarrolladora web y diseñadora digital · 2025</p>
+        <p class="case__text">Nueva tienda online para un negocio de Jerez, con unos 1.500 productos de baño, climatización y calefacción. Participé en el diseño, el desarrollo y el lanzamiento.</p>
+        <ul class="list list--small">
+          <li>Arquitectura de la tienda, categorías, navegación y filtros</li>
+          <li>Plantillas de producto según el tipo de artículo</li>
+          <li>SEO, Merchant Center y revisión de las campañas de Google Ads tras la migración</li>
+        </ul>
+        <a href="https://tubesan.es/tienda/" class="btn btn--outline" target="_blank" rel="noopener">Ver la tienda</a>
       </div>
     </article>
 
-    <hr class="divider">
-
-    <!-- Caso destacado: Omaïlab -->
-    <article>
-      <div class="case case--reverse">
-        <div class="case__media">
-          <video src="video/omailab-ficha.mp4" poster="video/omailab-ficha-poster.jpg" width="1100" height="788" autoplay muted loop playsinline preload="metadata" aria-label="Recorrido por una ficha de producto de Omaïlab en escritorio"></video>
-        </div>
-        <div>
-          <span class="tag">Colaboración con agencia · WooCommerce</span>
-          <h3 class="case__title">Omaïlab</h3>
-          <p class="case__text">Tienda de geles conductores ecológicos. A partir del diseño de escritorio de la agencia, implementé una nueva plantilla de ficha de producto, la adapté a tablet y móvil y la apliqué a siete productos.</p>
-          <dl class="facts">
-            <div><dt>Colaboración</dt><dd>Agencia colaboradora</dd></div>
-            <div><dt>Periodo</dt><dd>Mayo – junio 2026</dd></div>
-            <div><dt>Plataforma</dt><dd>WordPress, WooCommerce y WPBakery</dd></div>
-            <div><dt>Alcance</dt><dd>1 plantilla, 7 fichas</dd></div>
-          </dl>
-          <ul class="list list--small">
-            <li>Plantilla de ficha reutilizable desde el diseño de la agencia</li>
-            <li>Adaptación propia a tablet y móvil</li>
-            <li>Barra superior y nuevos iconos de categoría</li>
-            <li>Banner de cookies y protección anti-spam</li>
-          </ul>
-          <a href="https://www.omailab.com/" class="btn btn--outline" target="_blank" rel="noopener">Ver la tienda</a>
-        </div>
+    <article class="case case--reverse">
+      <div class="case__media">
+        <img src="img/proyectos/extranjeria-responsive.webp" alt="Web de Solicitud de Extranjería en tablet y móvil" width="900" height="641" loading="lazy">
       </div>
-      <div class="slider slider--featured" data-per-desktop="2" data-gap="16" role="region" aria-roledescription="carrusel" aria-label="Imágenes del proyecto Omaïlab">
-        <div class="slider__viewport">
-          <div class="slider__track">
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/omailab-diseno-agencia.webp" alt="Diseño de referencia de la ficha facilitado por la agencia" width="558" height="542" loading="lazy"></div>
-              <figcaption>Diseño de referencia de la agencia</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/omailab-ficha-publicada.webp" alt="Ficha publicada en Omaïlab con contenido real" width="558" height="542" loading="lazy"></div>
-              <figcaption>Ficha publicada con contenido real</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/omailab-siete-fichas.webp" alt="Las siete fichas de producto de Omaïlab" width="1200" height="500" loading="lazy"></div>
-              <figcaption>Siete productos, una misma plantilla</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/omailab-movil.webp" alt="Ficha de Omaïlab en varias pantallas de móvil" width="1180" height="480" loading="lazy"></div>
-              <figcaption>Adaptación a móvil</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/omailab-tablet.webp" alt="Ficha de Omaïlab en tablet y móvil" width="1332" height="949" loading="lazy"></div>
-              <figcaption>Tablet y móvil</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/omailab-iconos.webp" alt="Menú visual de categorías con iconos en Omaïlab" width="838" height="374" loading="lazy"></div>
-              <figcaption>Nuevos iconos de categoría</figcaption>
-            </figure>
-            <figure class="slider__slide">
-              <div class="slider__frame"><img src="img/proyectos/omailab-cookies.webp" alt="Banner de consentimiento de cookies en Omaïlab" width="1158" height="560" loading="lazy"></div>
-              <figcaption>Cookies y protección anti-spam</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="slider__controls">
-          <div class="slider__dots"></div>
-          <div class="slider__arrows">
-            <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-            <button type="button" class="slider__arrow slider__arrow--next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          </div>
-        </div>
+      <div>
+        <p class="tag">Web de servicios · WordPress</p>
+        <h3 class="case__title">Solicitud de Extranjería</h3>
+        <p class="case__meta">Proyecto para cliente · Diseño y desarrollo</p>
+        <p class="case__text">Web para un abogado especializado en extranjería, pensada para explicar cada trámite y llevar a quien la visita a pedir su consulta.</p>
+        <ul class="list list--small">
+          <li>Diseño y desarrollo de la web con Elementor</li>
+          <li>Estructura de trámites y recorrido hasta el contacto y la cita</li>
+          <li>SEO On-Page y local, adaptación a móvil y rendimiento</li>
+        </ul>
+        <a href="https://solicitudextranjeria.com/" class="btn btn--outline" target="_blank" rel="noopener">Ver la web</a>
       </div>
     </article>
 
-    <hr class="divider">
+    <article class="case">
+      <div class="case__media">
+        <video src="video/omailab-ficha.mp4" poster="video/omailab-ficha-poster.jpg" width="1100" height="788" controls muted playsinline preload="none" aria-label="Recorrido por una ficha de producto de Omaïlab en escritorio"></video>
+      </div>
+      <div>
+        <p class="tag">Colaboración con agencia · WooCommerce</p>
+        <h3 class="case__title">Omaïlab</h3>
+        <p class="case__meta">Colaboración freelance · 2026</p>
+        <p class="case__text">La agencia me pasó el diseño de escritorio de la ficha de producto. Lo convertí en una plantilla reutilizable, resolví la versión para tablet y móvil y la apliqué a siete productos con su contenido real.</p>
+        <ul class="list list--small">
+          <li>Plantilla de ficha fiel al diseño, en WPBakery</li>
+          <li>Adaptación propia a tablet y móvil</li>
+          <li>Barra superior, nuevas categorías en el menú, banner de cookies y protección antispam</li>
+        </ul>
+        <a href="https://www.omailab.com/" class="btn btn--outline" target="_blank" rel="noopener">Ver la tienda</a>
+      </div>
+      <div class="compare">
+        <figure>
+          <img src="img/proyectos/omailab-diseno-agencia.webp" alt="Diseño de escritorio de la ficha de producto facilitado por la agencia" width="558" height="542" loading="lazy">
+          <figcaption>Diseño de la agencia</figcaption>
+        </figure>
+        <figure>
+          <img src="img/proyectos/omailab-ficha-publicada.webp" alt="Ficha de producto publicada en Omaïlab con contenido real" width="558" height="542" loading="lazy">
+          <figcaption>Ficha publicada</figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
 
-    <!-- Resto de proyectos -->
-    <h3 class="subheading">Más proyectos</h3>
+  <!-- Servicios -->
+  <section id="servicios" class="section section--grey">
+    <div class="container">
+      <div class="section__intro">
+        <p class="eyebrow">Qué hago</p>
+        <h2>Lo que puedo hacer por tu web o tu tienda online.</h2>
+      </div>
+      <div class="offer">
+        <article class="offer__item">
+          <h3>Webs corporativas y landing pages</h3>
+          <p>Una web clara que explique qué ofreces y facilite que te contacten.</p>
+          <p class="offer__price">Desde 270 €</p>
+        </article>
+        <article class="offer__item">
+          <h3>Tiendas online</h3>
+          <p>WooCommerce o PrestaShop, con el catálogo ordenado, fichas claras y una compra sencilla.</p>
+          <p class="offer__price">Desde 1.000 €</p>
+        </article>
+        <article class="offer__item">
+          <h3>Mejora y mantenimiento</h3>
+          <p>Reviso la web que ya tienes, la optimizo y la mantengo al día.</p>
+          <p class="offer__price">Mantenimiento desde 30 €/mes</p>
+        </article>
+        <article class="offer__item">
+          <h3>Apoyo a agencias</h3>
+          <p>Maquetación desde diseño o Figma, tiendas y webs completas para tus clientes.</p>
+          <p class="offer__price">Según encargo</p>
+        </article>
+      </div>
+      <p class="offer__note">Precios de partida, sin IVA. <a href="servicios.html">Ver todos los servicios y qué incluye cada uno</a></p>
+    </div>
+  </section>
+
+  <!-- Más proyectos -->
+  <section class="section container">
+    <div class="section__intro">
+      <p class="eyebrow">Más proyectos</p>
+      <h2>Otras webs y tiendas en las que he trabajado.</h2>
+    </div>
     <div class="grid-auto">
       <article class="project-card">
-        <div class="slider slider--card" data-per-desktop="1" data-gap="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de Tendencias PeluBelleza">
-          <div class="slider__viewport">
-            <div class="slider__track">
-              <div class="slider__slide"><img src="img/proyectos/tendencias-inicio.webp" alt="Página de inicio de Tendencias PeluBelleza" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/tendencias-categoria.webp" alt="Categoría con filtros y menú desplegable" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/tendencias-responsive.webp" alt="Inicio en tablet y categoría en móvil" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/tendencias-carrito.webp" alt="Carrito en tablet y Sobre nosotros en móvil" width="900" height="600" loading="lazy"></div>
-            </div>
-          </div>
-          <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Imagen anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-          <button type="button" class="slider__arrow slider__arrow--next" aria-label="Imagen siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="slider__dots"></div>
-        </div>
+        <img src="img/proyectos/tendencias-inicio.webp" alt="Página de inicio de Tendencias PeluBelleza" width="900" height="600" loading="lazy">
         <div class="project-card__body">
-          <span class="tag">Optimización y mantenimiento · WooCommerce</span>
+          <p class="tag">Optimización y mantenimiento · WooCommerce</p>
           <h3>Tendencias PeluBelleza</h3>
-          <p>Auditoría, mejora de rendimiento y experiencia de usuario, SEO de producto y mantenimiento mensual de la tienda.</p>
+          <p>Auditoría, rendimiento, experiencia de usuario, SEO de producto y mantenimiento continuado de la tienda.</p>
           <p class="project-card__link"><a href="https://tendencias-pelubelleza.com/" target="_blank" rel="noopener">Ver web →</a></p>
         </div>
       </article>
 
       <article class="project-card">
-        <div class="slider slider--card" data-per-desktop="1" data-gap="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de The Dragon Chamber Games">
-          <div class="slider__viewport">
-            <div class="slider__track">
-              <div class="slider__slide"><img src="img/proyectos/dragon-inicio.webp" alt="Página de inicio de The Dragon Chamber Games" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/dragon-categoria.webp" alt="Categoría Warhammer con subcategorías" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/dragon-responsive.webp" alt="Tienda en tablet y móvil" width="900" height="600" loading="lazy"></div>
-            </div>
-          </div>
-          <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Imagen anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-          <button type="button" class="slider__arrow slider__arrow--next" aria-label="Imagen siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="slider__dots"></div>
-        </div>
+        <img src="img/proyectos/gracia-reservas.webp" alt="Página de reservas de Gracia de la Maza en tablet y móvil" width="900" height="641" loading="lazy">
         <div class="project-card__body">
-          <span class="tag">Colaboración · PrestaShop 9</span>
-          <h3>The Dragon Chamber Games</h3>
-          <p>Diseño y maquetación, organización de categorías y adaptación responsive de una tienda en PrestaShop 9.</p>
-          <p class="project-card__link"><a href="https://thedragonchambergames.com/prestashop/" target="_blank" rel="noopener">Ver web →</a></p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="slider slider--card" data-per-desktop="1" data-gap="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de Solicitud de Extranjería">
-          <div class="slider__viewport">
-            <div class="slider__track">
-              <div class="slider__slide"><img src="img/proyectos/extranjeria-inicio.webp" alt="Página de inicio de Solicitud de Extranjería" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/extranjeria-responsive.webp" alt="Web en tablet y móvil" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/extranjeria-formulario.webp" alt="Formulario de estudio del caso" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/extranjeria-secciones.webp" alt="Llamada a la acción y ventajas" width="900" height="600" loading="lazy"></div>
-            </div>
-          </div>
-          <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Imagen anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-          <button type="button" class="slider__arrow slider__arrow--next" aria-label="Imagen siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="slider__dots"></div>
-        </div>
-        <div class="project-card__body">
-          <span class="tag">Web corporativa · WordPress</span>
-          <h3>Solicitud de Extranjería</h3>
-          <p>Diseño y desarrollo desde cero de la web de un despacho de extranjería, con reserva de citas y SEO local.</p>
-          <p class="project-card__link"><a href="https://solicitudextranjeria.com/" target="_blank" rel="noopener">Ver web →</a></p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="slider slider--card" data-per-desktop="1" data-gap="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de Gracia de la Maza">
-          <div class="slider__viewport">
-            <div class="slider__track">
-              <div class="slider__slide"><img src="img/proyectos/gracia-reservas.webp" alt="Página de reservas en tablet y móvil" width="900" height="600" loading="lazy"></div>
-            </div>
-          </div>
-        </div>
-        <div class="project-card__body">
-          <span class="tag">Reservas online · WordPress</span>
+          <p class="tag">Reservas online · WordPress</p>
           <h3>Gracia de la Maza</h3>
           <p>Sistema de reservas con Amelia Pro para un centro de estética, adaptado a sus servicios y horarios.</p>
           <p class="project-card__link"><a href="https://graciamaza.es/reservas" target="_blank" rel="noopener">Ver web →</a></p>
@@ -310,19 +191,19 @@
       </article>
 
       <article class="project-card">
-        <div class="slider slider--card" data-per-desktop="1" data-gap="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de Farmacia Morillo Conil">
-          <div class="slider__viewport">
-            <div class="slider__track">
-              <div class="slider__slide"><img src="img/proyectos/farmacia-inicio.webp" alt="Página de inicio de Farmacia Morillo Conil" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/farmacia-responsive.webp" alt="Secciones en tablet y móvil" width="900" height="600" loading="lazy"></div>
-            </div>
-          </div>
-          <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Imagen anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-          <button type="button" class="slider__arrow slider__arrow--next" aria-label="Imagen siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="slider__dots"></div>
-        </div>
+        <img src="img/proyectos/dragon-inicio.webp" alt="Página de inicio de The Dragon Chamber Games" width="900" height="600" loading="lazy">
         <div class="project-card__body">
-          <span class="tag">Entorno de agencia · WordPress</span>
+          <p class="tag">Tienda online · PrestaShop 9</p>
+          <h3>The Dragon Chamber Games</h3>
+          <p>Diseño y maquetación, organización de categorías y adaptación a móvil de una tienda en PrestaShop 9.</p>
+          <p class="project-card__link"><a href="https://thedragonchambergames.com/prestashop/" target="_blank" rel="noopener">Ver web →</a></p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="img/proyectos/farmacia-inicio.webp" alt="Página de inicio de Farmacia Morillo Conil" width="900" height="555" loading="lazy">
+        <div class="project-card__body">
+          <p class="tag">Entorno de agencia · WordPress</p>
           <h3>Farmacia Morillo Conil</h3>
           <p>Rediseño y desarrollo de la web, con foco en la arquitectura de información y la navegación.</p>
           <p class="project-card__link"><a href="https://farmaciamorilloconil.com/" target="_blank" rel="noopener">Ver web →</a></p>
@@ -330,83 +211,97 @@
       </article>
 
       <article class="project-card">
-        <div class="slider slider--card" data-per-desktop="1" data-gap="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de Alexandra Ferrera De Arte">
-          <div class="slider__viewport">
-            <div class="slider__track">
-              <div class="slider__slide"><img src="img/proyectos/dearte-inicio.webp" alt="Página de inicio de Alexandra Ferrera De Arte" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/dearte-carboncillo.webp" alt="Página de retrato a carboncillo en tablet y móvil" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/dearte-faq.webp" alt="Preguntas frecuentes" width="900" height="600" loading="lazy"></div>
-            </div>
-          </div>
-          <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Imagen anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-          <button type="button" class="slider__arrow slider__arrow--next" aria-label="Imagen siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="slider__dots"></div>
-        </div>
+        <img src="img/proyectos/dearte-inicio.webp" alt="Página de inicio de Alexandra Ferrera De Arte" width="900" height="600" loading="lazy">
         <div class="project-card__body">
-          <span class="tag">Proyecto propio · WordPress y Divi</span>
+          <p class="tag">Proyecto propio · WordPress y Divi</p>
           <h3>Alexandra Ferrera De Arte</h3>
-          <p>Web de mi marca artística. El último rediseño mejoró la estructura, la comunicación visual y las llamadas a la acción para los encargos de retratos.</p>
+          <p>Web de mi marca artística. El último rediseño mejoró la estructura, la imagen y las llamadas a la acción para encargar retratos.</p>
           <p class="project-card__link"><a href="https://alexandraferrera-dearte.com/" target="_blank" rel="noopener">Ver web →</a></p>
         </div>
       </article>
 
       <article class="project-card">
-        <div class="slider slider--card" data-per-desktop="1" data-gap="0" role="region" aria-roledescription="carrusel" aria-label="Imágenes de Las Playas de Cádiz">
-          <div class="slider__viewport">
-            <div class="slider__track">
-              <div class="slider__slide"><img src="img/proyectos/playas-inicio.webp" alt="Página de inicio de Las Playas de Cádiz" width="900" height="600" loading="lazy"></div>
-              <div class="slider__slide"><img src="img/proyectos/playas-responsive.webp" alt="Ficha de playa en tablet y portada en móvil" width="900" height="600" loading="lazy"></div>
-            </div>
-          </div>
-          <button type="button" class="slider__arrow slider__arrow--prev" aria-label="Imagen anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-          <button type="button" class="slider__arrow slider__arrow--next" aria-label="Imagen siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="slider__dots"></div>
-        </div>
+        <img src="img/proyectos/playas-inicio.webp" alt="Página de inicio de Las Playas de Cádiz" width="900" height="600" loading="lazy">
         <div class="project-card__body">
-          <span class="tag">Proyecto propio · React y Vite</span>
+          <p class="tag">Proyecto propio · React y Vite</p>
           <h3>Las Playas de Cádiz</h3>
-          <p>Desarrollo frontend desde cero de una web sobre las playas de la provincia, con interfaz visual y navegación intuitiva.</p>
+          <p>Desarrollo frontend desde cero de una web sobre las playas de la provincia, con código propio.</p>
           <p class="project-card__link"><a href="https://lasplayasdecadiz.com/" target="_blank" rel="noopener">Ver web →</a></p>
         </div>
       </article>
-
-      <article class="card card--dark">
-        <p class="tag">Tu próximo proyecto</p>
-        <h3>¿Tienes un proyecto parecido entre manos?</h3>
-        <p>Tienda online, web corporativa o fichas de producto. Cuéntame qué necesitas y vemos cómo puedo ayudarte.</p>
-        <p><a href="contacto.html" class="btn btn--light">Hablemos</a></p>
-      </article>
     </div>
+  </section>
 
-    <div class="stats">
-      <p><strong>+1.500</strong><span>productos en una tienda WooCommerce</span></p>
-      <p><strong>240 h</strong><span>Certificado Google UX Design</span></p>
-      <p><strong>560 h</strong><span>Certificado IFCD0110 Páginas web</span></p>
+  <!-- Agencias -->
+  <section class="section section--peach">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">Para agencias</p>
+        <h2>¿Trabajas en una agencia o un estudio?</h2>
+        <p class="muted">Me sumo a tus proyectos cuando necesitas más capacidad o un perfil web concreto.</p>
+      </div>
+      <div>
+        <ul class="list">
+          <li>Implemento tu diseño con fidelidad, también desde Figma.</li>
+          <li>Trabajo con Elementor Pro, Divi, WPBakery, WooCommerce y PrestaShop.</li>
+          <li>Comunico avances y dudas a tiempo, y reviso cada entrega en ordenador, tablet y móvil.</li>
+        </ul>
+        <!-- PENDIENTE: enlazar a agencias.html cuando exista -->
+        <p class="band__link"><a href="servicios.html#agencias" class="btn btn--outline">Así colaboro con agencias</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué trabajar conmigo -->
+  <section class="section container">
+    <div class="about-short">
+      <img class="about-short__photo" src="img/marca/alexandra.webp" alt="Alexandra Ferrera, diseñadora y desarrolladora web" width="800" height="1000" loading="lazy">
+      <div>
+        <p class="eyebrow">Por qué trabajar conmigo</p>
+        <h2>Una sola persona que diseña, desarrolla y te explica cada paso.</h2>
+        <ul class="list about-list">
+          <li><span><strong>Diseño y desarrollo en la misma persona.</strong> Lo que se diseña es lo que se entrega, sin perder detalles por el camino.</span></li>
+          <li><span><strong>Criterio visual.</strong> Soy artista plástica desde 2011 y cuido la composición, el color y el detalle de cada web.</span></li>
+          <li><span><strong>Claridad.</strong> Te explico qué hago, cuándo y por qué. Y en cada proyecto digo cuál fue mi parte.</span></li>
+        </ul>
+        <p class="band__link"><a href="sobre-mi.html">Más sobre mí →</a></p>
+
+        <!-- PENDIENTE: sustituir por el texto completo de la recomendación de Malt -->
+        <figure class="quote">
+          <blockquote>
+            <p>«Encargué a Alexandra el desarrollo de mi página web, solicitudextranjeria.com, una landing page para ofrecer mis servicios como abogado especializado en extranjería. Desde el primer momento entendió perfectamente lo que buscaba y todo el proceso fue muy fácil […]»</p>
+          </blockquote>
+          <figcaption><strong>Israel Rodríguez</strong>, abogado · Solicitud de Extranjería · <a href="https://www.malt.es/profile/alexandraferrera" target="_blank" rel="noopener">Ver en Malt</a></figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
   <!-- Forma de trabajo -->
   <section class="section section--grey">
     <div class="container">
-      <p class="eyebrow">Cómo trabajamos</p>
-      <h2 class="section__intro">Un encargo claro desde el principio.</h2>
-      <div class="grid-3">
-        <div>
-          <p class="step-number">01</p>
-          <h3>Me cuentas el proyecto</h3>
-          <p>Qué necesitas, con qué plataforma trabajáis y para cuándo. Si hay diseño en Figma, mejor.</p>
-        </div>
-        <div>
-          <p class="step-number">02</p>
-          <h3>Definimos el alcance</h3>
-          <p>Antes de empezar, acordamos tareas, entregas y plazos, para que no haya sorpresas.</p>
-        </div>
-        <div>
-          <p class="step-number">03</p>
-          <h3>Desarrollo y entrega</h3>
-          <p>Te mantengo al día de los avances y te consulto las dudas a tiempo, no al final.</p>
-        </div>
+      <div class="section__intro">
+        <p class="eyebrow">Cómo trabajo</p>
+        <h2>Un proceso claro desde el primer mensaje.</h2>
       </div>
+      <ol class="steps">
+        <li>
+          <h3>Me cuentas qué necesitas</h3>
+          <p>Tu negocio, tu web actual si la tienes y lo que te gustaría conseguir.</p>
+        </li>
+        <li>
+          <h3>Te hago una propuesta</h3>
+          <p>Alcance, presupuesto y plazo por escrito, para que sepas qué incluye antes de empezar.</p>
+        </li>
+        <li>
+          <h3>Diseño y desarrollo</h3>
+          <p>Te enseño los avances y revisamos juntos, sin esperar al final.</p>
+        </li>
+        <li>
+          <h3>Entrega y después</h3>
+          <p>Te paso un tutorial para gestionar tu web y, si quieres, me encargo del mantenimiento.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -414,12 +309,12 @@
   <section class="section container">
     <div class="cta">
       <div>
-        <h2>¿Tienes un proyecto entre manos?</h2>
-        <p class="lead">Cuéntame qué necesitas y vemos juntos cómo puedo ayudarte.</p>
+        <h2>¿Hablamos de tu web?</h2>
+        <p class="lead">Cuéntame qué necesitas y te respondo normalmente en 24 horas laborables.</p>
       </div>
       <div class="cta__actions">
-        <a href="contacto.html" class="btn btn--primary">Hablemos de tu próximo proyecto</a>
-        <p class="muted small">¿Tienes un negocio y necesitas una web o una tienda online? También trabajo directamente con autónomos y pequeñas empresas. <a href="servicios.html#negocios">Ver servicios para negocios</a></p>
+        <a href="contacto.html" class="btn btn--primary">Cuéntame tu proyecto</a>
+        <p class="muted small">O escríbeme directamente a <a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></p>
       </div>
     </div>
   </section>
