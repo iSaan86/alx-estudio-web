@@ -188,8 +188,8 @@ p {
   gap: 24px;
 }
 
-.grid-auto--two {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+.grid-auto--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .align-center {
@@ -1222,6 +1222,7 @@ p {
   .about-short,
   .contact,
   .grid-2,
+  .grid-auto--three,
   .form__row {
     grid-template-columns: minmax(0, 1fr);
   }
