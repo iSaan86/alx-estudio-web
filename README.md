@@ -2,7 +2,7 @@
 
 Web de ALX Estudio Web, el estudio de diseño y desarrollo web de Alexandra Ferrera (Jerez de la Frontera).
 
-Web estática hecha a mano con HTML5, CSS3 y un poco de JavaScript (solo para las galerías de proyectos), sin dependencias ni proceso de compilación. Se publica en Netlify automáticamente con cada cambio en la rama `main`.
+Web estática hecha a mano con HTML5, CSS3 y un poco de JavaScript (solo para las galerías de proyectos y el botón de volver arriba), sin dependencias ni proceso de compilación. Se publica en Netlify automáticamente con cada cambio en la rama `main`.
 
 ## Estructura
 
@@ -17,7 +17,7 @@ aviso-legal.html    Aviso legal
 privacidad.html     Política de privacidad
 cookies.html        Política de cookies
 css/styles.css      Estilos de toda la web, ordenados por secciones
-js/main.js          Galerías de proyectos: botones, contador y vista ampliada
+js/main.js          Galerías de proyectos (botones, contador y vista ampliada) y botón de volver arriba
 fonts/              IBM Plex Mono (500 y 600) alojada en la web, con su licencia OFL
 img/marca/          Logotipos ALX en SVG, foto de Alexandra e imagen para redes (Open Graph)
 img/proyectos/      Capturas de proyectos en WebP

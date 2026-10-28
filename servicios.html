@@ -14,15 +14,16 @@
   <meta property="og:image" content="https://alx-estudioweb.netlify.app/img/marca/og-alx-estudio-web.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Alexandra Ferrera junto al logotipo de ALX Estudio Web y el texto: webs y tiendas online diseñadas y desarrolladas con criterio">
+  <meta property="og:image:alt" content="Logotipo de ALX Estudio Web, la X del logotipo en grande y el texto: webs y tiendas online diseñadas y desarrolladas con criterio">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<header class="site-header">
+<header class="site-header" id="arriba">
   <div class="container site-header__inner">
     <a class="site-header__logo" href="index.html" aria-label="ALX Estudio Web, inicio">
       <img src="img/marca/logo-alx.svg" alt="ALX Estudio Web" width="1636" height="854">
@@ -50,23 +51,24 @@
         <a class="offer__link" href="#web">Una web nueva</a>
         <p>Para presentar tu negocio o un servicio concreto.</p>
         <ul class="offer__prices">
-          <li>Landing page <strong>desde 270 €</strong></li>
-          <li>Web corporativa <strong>desde 550 €</strong></li>
+          <li>Landing page <strong>desde 300 €</strong></li>
+          <li>Web corporativa <strong>desde 650 €</strong></li>
         </ul>
       </li>
       <li class="offer__item">
         <a class="offer__link" href="#tienda">Una tienda online</a>
         <p>Nueva o ya en marcha, en WooCommerce o PrestaShop.</p>
         <ul class="offer__prices">
-          <li>Tienda nueva <strong>desde 1.000 €</strong></li>
-          <li>Mejora de tu tienda <strong>a consultar</strong></li>
+          <li>Tienda nueva <strong>desde 1.300 €</strong></li>
+          <li>Revisión de tu tienda <strong>desde 80 €</strong></li>
         </ul>
       </li>
       <li class="offer__item">
         <a class="offer__link" href="#mejorar">Mejorar tu web actual</a>
         <p>Solo lo que necesites: el SEO, la velocidad, el diseño o una función nueva.</p>
         <ul class="offer__prices">
-          <li>Revisión y mejora <strong>a consultar</strong></li>
+          <li>Revisión con informe <strong>desde 80 €</strong></li>
+          <li>Mejoras <strong>30 €/h</strong></li>
         </ul>
       </li>
       <li class="offer__item">
@@ -100,8 +102,8 @@
             <li>SEO básico</li>
             <li>Dos rondas de cambios</li>
           </ul>
-          <p class="card__meta">Plazo orientativo: 1–2 semanas</p>
-          <p class="price">Desde 270 €<small>Una página</small></p>
+          <p class="card__meta">Plazo orientativo: 1 semana</p>
+          <p class="price">Desde 300 €<small>Una página</small></p>
         </article>
 
         <article class="card">
@@ -116,8 +118,8 @@
             <li>Tutorial para editar tus contenidos</li>
             <li>Dos rondas de cambios</li>
           </ul>
-          <p class="card__meta">Plazo orientativo: 3–5 semanas · Ejemplo: <a href="https://solicitudextranjeria.com/" target="_blank" rel="noopener">Solicitud de Extranjería</a></p>
-          <p class="price">Desde 550 €<small>Hasta 5 páginas</small></p>
+          <p class="card__meta">Plazo orientativo: 2–3 semanas · Ejemplo: <a href="https://solicitudextranjeria.com/" target="_blank" rel="noopener">Solicitud de Extranjería</a></p>
+          <p class="price">Desde 650 €<small>Hasta 5 páginas</small></p>
         </article>
 
         <article class="card card--dark">
@@ -149,8 +151,8 @@
           <li>SEO básico de la tienda</li>
           <li>Tutorial para gestionar productos y pedidos</li>
         </ul>
-        <p class="card__meta">Plazo orientativo: 6–10 semanas · Ejemplo: <a href="https://tubesan.es/tienda/" target="_blank" rel="noopener">Tubesan</a></p>
-        <p class="price">Desde 1.000 €<small>Más productos o funciones, según presupuesto</small></p>
+        <p class="card__meta">Plazo orientativo: 3–5 semanas · Ejemplo: <a href="https://tubesan.es/tienda/" target="_blank" rel="noopener">Tubesan</a></p>
+        <p class="price">Desde 1.300 €<small>Cada 25 productos más, con sus imágenes optimizadas y su SEO: 75 €</small></p>
       </article>
 
       <article class="card">
@@ -164,7 +166,7 @@
           <li>SEO On-Page, de producto e información para Google Merchant Center</li>
         </ul>
         <p class="card__meta">Ejemplo: <a href="https://tendencias-pelubelleza.com/" target="_blank" rel="noopener">Tendencias PeluBelleza</a></p>
-        <p class="price">A consultar<small>Según lo que necesite tu tienda, aunque sea una sola mejora</small></p>
+        <p class="price">Desde 80 €<small>Revisión con informe. Las mejoras, por horas (30 €/h) o con presupuesto cerrado</small></p>
       </article>
     </div>
   </section>
@@ -188,7 +190,7 @@
           <li>Funciones nuevas, como reservas online</li>
         </ul>
         <p class="card__meta">Ejemplo: <a href="https://graciamaza.es/reservas" target="_blank" rel="noopener">Gracia de la Maza</a>, reservas online para un centro de estética</p>
-        <p class="price">A consultar<small>Según lo que necesites, aunque sea una sola mejora</small></p>
+        <p class="price">Desde 80 €<small>Revisión con informe. Las mejoras, por horas (30 €/h) o con presupuesto cerrado</small></p>
       </article>
     </div>
   </section>
@@ -198,7 +200,7 @@
     <div class="section__intro">
       <p class="eyebrow">Mantenimiento</p>
       <h2>Tu web al día, con copias de seguridad y alguien que responde.</h2>
-      <p class="muted">Para webs y tiendas en WordPress. Mes a mes, sin permanencia.</p>
+      <p class="muted">Para webs y tiendas en WordPress. Mes a mes, sin permanencia, o un año por adelantado con un mes gratis.</p>
     </div>
     <div class="services-grid">
       <article class="card">
@@ -228,7 +230,7 @@
         <p class="price">60 €/mes<small>Mes a mes, sin permanencia</small></p>
       </article>
     </div>
-    <p class="offer__note">Fuera de los planes, con presupuesto aparte: desarrollos nuevos, rediseños y limpieza de webs infectadas.</p>
+    <p class="offer__note">Fuera de los planes: cambios y tareas sueltas a 30 €/h; desarrollos nuevos, rediseños y limpieza de webs infectadas, con presupuesto aparte.</p>
   </section>
 
   <!-- Preguntas frecuentes -->
@@ -242,7 +244,7 @@
       <div class="faq">
         <details>
           <summary>¿Cuánto tarda en estar lista mi web?</summary>
-          <p>Depende del servicio: una landing page, de 1 a 2 semanas; una web corporativa, de 3 a 5; una tienda online, de 6 a 10. El plazo cuenta desde que tengo los textos y las imágenes, y te lo confirmo por escrito en el presupuesto.</p>
+          <p>Depende del servicio: una landing page, alrededor de 1 semana; una web corporativa, de 2 a 3; una tienda online, de 3 a 5. El plazo cuenta desde que tengo los textos y las imágenes, y te lo confirmo por escrito en el presupuesto.</p>
         </details>
         <details>
           <summary>¿Qué tengo que aportar yo?</summary>
@@ -292,19 +294,6 @@
     </div>
   </section>
 
-  <!-- Agencias -->
-  <section class="section section--peach">
-    <div class="container grid-2 align-center">
-      <div>
-        <p class="eyebrow">Para agencias</p>
-        <h2>¿Trabajas en una agencia o un estudio?</h2>
-      </div>
-      <div>
-        <p>También colaboro con agencias, estudios y consultoras: implemento sus diseños, desarrollo tiendas y mejoro las webs de sus clientes.</p>
-        <p class="band__link"><a href="agencias.html" class="btn btn--outline">Así colaboro con agencias</a></p>
-      </div>
-    </div>
-  </section>
 
   <!-- Llamada final -->
   <section class="section container">
@@ -316,6 +305,7 @@
       <div class="cta__actions">
         <a href="contacto.html" class="btn btn--primary">Cuéntame tu proyecto</a>
         <p class="muted small">O escríbeme directamente a <a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></p>
+        <p class="muted small">¿Trabajas en una agencia? <a href="agencias.html">Así colaboro con equipos →</a></p>
       </div>
     </div>
   </section>
@@ -365,5 +355,6 @@
     </div>
   </div>
 </footer>
+<a class="to-top" href="#arriba" aria-label="Volver arriba">↑</a>
 </body>
 </html>

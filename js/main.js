@@ -1,13 +1,25 @@
 /* ==========================================================================
-   ALX Estudio Web · Galerías de proyectos
+   ALX Estudio Web · Galerías de proyectos y botón de volver arriba
    Sin JavaScript, cada galería se desliza con el dedo o la barra de
    desplazamiento y cada imagen abre su archivo. Este script añade los
    botones, el contador y la vista ampliada.
    ========================================================================== */
 
-const lightbox = createLightbox();
+const galleries = document.querySelectorAll('.gallery');
+const lightbox = galleries.length ? createLightbox() : null;
 
-document.querySelectorAll('.gallery').forEach(setupGallery);
+galleries.forEach(setupGallery);
+
+// Volver arriba: se muestra cuando ya se ha bajado más de una pantalla
+const toTop = document.querySelector('.to-top');
+
+if (toTop) {
+  const toggleToTop = () => {
+    toTop.classList.toggle('to-top--visible', window.scrollY > window.innerHeight);
+  };
+  window.addEventListener('scroll', toggleToTop, { passive: true });
+  toggleToTop();
+}
 
 function setupGallery(gallery) {
   const track = gallery.querySelector('.gallery__track');

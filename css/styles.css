@@ -34,6 +34,9 @@
   --font-body: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", Consolas, monospace;
 
+  /* Texto secundario: notas, listas pequeñas, enlaces auxiliares y pie */
+  --text-small: 16px;
+
   /* Espaciado */
   --gutter: clamp(16px, 4vw, 40px);
   --section-space: clamp(64px, 8vw, 112px);
@@ -185,6 +188,10 @@ p {
   gap: 24px;
 }
 
+.grid-auto--two {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+}
+
 .align-center {
   align-items: center;
 }
@@ -205,7 +212,7 @@ p {
 }
 
 .small {
-  font-size: 15px;
+  font-size: var(--text-small);
 }
 
 .stack > * + * {
@@ -297,7 +304,7 @@ p {
 .btn--small {
   min-height: 44px;
   padding: 8px 18px;
-  font-size: 15px;
+  font-size: var(--text-small);
 }
 
 .btn-group {
@@ -332,7 +339,7 @@ p {
 }
 
 .list--small {
-  font-size: 15px;
+  font-size: var(--text-small);
 }
 
 /* Etiquetas de herramientas */
@@ -348,7 +355,7 @@ p {
 .chips li {
   padding: 6px 14px;
   border: 1px solid var(--line);
-  font-size: 15px;
+  font-size: var(--text-small);
 }
 
 /* Tarjetas */
@@ -568,12 +575,40 @@ p {
 
 .lightbox__caption {
   margin-top: 12px;
-  font-size: 15px;
+  font-size: var(--text-small);
   color: var(--white);
 }
 
 .lightbox .gallery__count {
   color: var(--on-dark-muted);
+}
+
+/* Volver arriba: aparece al bajar por la página (lo activa js/main.js) */
+.to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 5;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line-strong);
+  background: var(--white);
+  font-size: 18px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.to-top:hover {
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
+.to-top--visible {
+  display: flex;
 }
 
 /* Cita de cliente */
@@ -595,7 +630,7 @@ p {
 
 .quote figcaption {
   margin-top: 16px;
-  font-size: 15px;
+  font-size: var(--text-small);
   color: var(--muted);
 }
 
@@ -705,7 +740,7 @@ p {
 }
 
 .field label {
-  font-size: 15px;
+  font-size: var(--text-small);
   font-weight: 600;
 }
 
@@ -797,7 +832,7 @@ p {
 
 .nav a {
   padding: 10px 0;
-  font-size: 15px;
+  font-size: var(--text-small);
   color: var(--ink);
   text-decoration: none;
 }
@@ -820,7 +855,7 @@ p {
   padding-block: clamp(56px, 7vw, 80px) 32px;
   background: var(--ink);
   color: var(--white);
-  font-size: 15px;
+  font-size: var(--text-small);
 }
 
 .site-footer a {
@@ -890,6 +925,7 @@ p {
 
 /* Inicio: portada con la X del logotipo recortada por el borde */
 .hero {
+  position: relative;
   overflow: hidden;
 }
 
@@ -907,14 +943,14 @@ p {
 
 .hero__agency {
   margin-bottom: 12px;
-  font-size: 15px;
+  font-size: var(--text-small);
 }
 
 .hero__location {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
+  font-size: var(--text-small);
   color: var(--muted);
 }
 
@@ -923,11 +959,20 @@ p {
   color: var(--violet);
 }
 
-/* El SVG tiene margen interior: se amplía y se desplaza para que el borde corte la X */
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+/* La X se ancla al centro de la página: en portátiles la corta el borde y en
+   pantallas anchas se queda cerca del texto en lugar de irse a la derecha */
 .hero__mark {
-  width: 160%;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 240px);
+  width: 560px;
   max-width: none;
-  transform: translateX(14%);
+  transform: translateY(-50%);
 }
 
 /* Resumen de servicios y tarifas (Inicio, Servicios y Agencias) */
@@ -982,7 +1027,7 @@ p {
   margin: auto 0 0;
   padding: 8px 0 0;
   list-style: none;
-  font-size: 15px;
+  font-size: var(--text-small);
 }
 
 .offer__prices li {
@@ -1002,7 +1047,7 @@ p {
 
 .offer__note {
   margin-top: 32px;
-  font-size: 15px;
+  font-size: var(--text-small);
   color: var(--muted);
 }
 
@@ -1181,8 +1226,22 @@ p {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  /* En una columna, la X asoma por el borde derecho y el texto le deja sitio */
+  .hero__content {
+    padding-right: clamp(40px, 9vw, 72px);
+  }
+
   .hero__mark {
-    display: none;
+    left: auto;
+    right: 0;
+    width: clamp(180px, 36vw, 300px);
+    transform: translate(52%, -50%);
+  }
+
+  /* Línea entre proyectos destacados para que se vea dónde empieza cada uno */
+  .case + .case {
+    padding-top: 48px;
+    border-top: 1px solid var(--line);
   }
 
   .case--reverse .case__media {
@@ -1201,6 +1260,13 @@ p {
 
   .site-footer__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Tablet pequeña y móvil: el botón del menú no cabe junto al logo */
+@media (max-width: 767px) {
+  .nav .btn {
+    display: none;
   }
 }
 
@@ -1223,8 +1289,9 @@ p {
     font-size: 14px;
   }
 
-  .nav .btn {
-    display: none;
+  .hero__mark {
+    top: 72px;
+    transform: translateX(50%);
   }
 
   .offer,
@@ -1238,7 +1305,7 @@ p {
   }
 
   .project-card__body {
-    font-size: 15px;
+    font-size: var(--text-small);
   }
 
   .btn-group .btn {
@@ -1253,7 +1320,8 @@ p {
   }
 
   .btn,
-  .gallery__btn {
+  .gallery__btn,
+  .to-top {
     transition: none;
   }
 }
