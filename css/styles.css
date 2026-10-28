@@ -36,6 +36,8 @@
 
   /* Texto secundario: notas, listas pequeñas, enlaces auxiliares y pie */
   --text-small: 16px;
+  /* Notas de ubicación y horario, un punto por debajo */
+  --text-note: 15px;
 
   /* Espaciado */
   --gutter: clamp(16px, 4vw, 40px);
@@ -904,6 +906,7 @@ p {
 }
 
 .site-footer__note {
+  font-size: var(--text-note);
   color: var(--on-dark-muted);
 }
 
@@ -950,7 +953,7 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: var(--text-small);
+  font-size: var(--text-note);
   color: var(--muted);
 }
 
