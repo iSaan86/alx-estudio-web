@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alx-estudioweb.netlify.app/sitemap.xml
