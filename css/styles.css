@@ -78,7 +78,6 @@ html {
 
 body {
   margin: 0;
-  overflow-x: hidden;
   font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.6;
@@ -196,6 +195,10 @@ p {
 
 .align-center {
   align-items: center;
+}
+
+.align-start {
+  align-items: start;
 }
 
 
@@ -496,13 +499,14 @@ p {
   cursor: zoom-in;
 }
 
+/* Fondo gris claro: mientras carga la imagen no queda un hueco en blanco */
 .gallery__slide img,
 .gallery__slide video {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: contain;
   border: 1px solid var(--line);
-  background: var(--white);
+  background: var(--bg-alt);
 }
 
 .gallery__slide figcaption {
@@ -638,6 +642,11 @@ p {
 
 .quote strong {
   color: var(--ink);
+}
+
+/* Dentro de un caso destacado la columna es estrecha: la cita, más contenida */
+.case .quote blockquote p {
+  font-size: 18px;
 }
 
 /* Pasos numerados */
@@ -949,6 +958,12 @@ p {
   font-size: var(--text-small);
 }
 
+.hero__clients {
+  margin-bottom: 12px;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
 .hero__location {
   display: flex;
   align-items: center;
@@ -1050,7 +1065,6 @@ p {
 
 .offer__note {
   margin-top: 32px;
-  font-size: var(--text-small);
   color: var(--muted);
 }
 
@@ -1128,6 +1142,12 @@ p {
   margin-top: 32px;
 }
 
+.page-intro__note {
+  margin-top: 20px;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
@@ -1136,6 +1156,39 @@ p {
 
 .services-grid--small {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+/* Servicios: introducción de sección con la captura de un proyecto al lado */
+.service-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+  margin-bottom: clamp(32px, 4vw, 48px);
+}
+
+.service-head .section__intro {
+  margin-bottom: 0;
+}
+
+.service-shot {
+  margin: 0;
+}
+
+.service-shot--spaced {
+  margin-top: 32px;
+}
+
+.service-shot img {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--bg-alt);
+}
+
+.service-shot figcaption {
+  margin-top: 10px;
+  font-size: var(--text-small);
+  color: var(--muted);
 }
 
 .card__label {
@@ -1224,6 +1277,7 @@ p {
   .about,
   .about-short,
   .contact,
+  .service-head,
   .grid-2,
   .grid-auto--three,
   .form__row {
@@ -1288,8 +1342,12 @@ p {
     gap: 0 14px;
   }
 
+  /* Altura mínima cómoda para tocar con el dedo */
   .nav a {
-    padding: 6px 0;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0;
     font-size: 14px;
   }
 

@@ -10,13 +10,13 @@
   <meta property="og:locale" content="es_ES">
   <meta property="og:title" content="Servicios y precios para negocios · ALX Estudio Web">
   <meta property="og:description" content="Webs, landing pages y tiendas online, mejora de webs existentes y mantenimiento mensual. Qué incluye cada servicio, plazos y precios.">
-  <meta property="og:url" content="https://alx-estudioweb.netlify.app/servicios.html">
+  <meta property="og:url" content="https://alx-estudioweb.netlify.app/servicios">
   <meta property="og:image" content="https://alx-estudioweb.netlify.app/img/marca/og-alx-estudio-web.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Logotipo de ALX Estudio Web, la X del logotipo en grande y el texto: webs y tiendas online diseñadas y desarrolladas con criterio">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://alx-estudioweb.netlify.app/servicios.html">
+  <link rel="canonical" href="https://alx-estudioweb.netlify.app/servicios">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
@@ -68,8 +68,8 @@
         <a class="offer__link" href="#mejorar">Mejorar tu web actual</a>
         <p>Solo lo que necesites: el SEO, la velocidad, el diseño o una función nueva.</p>
         <ul class="offer__prices">
-          <li>Revisión con informe <strong>desde 80 €</strong></li>
-          <li>Mejoras <strong>30 €/h</strong></li>
+          <li>Mejoras sueltas <strong>30 €/h</strong></li>
+          <li>Mejora completa <strong>precio cerrado</strong></li>
         </ul>
       </li>
       <li class="offer__item">
@@ -87,9 +87,15 @@
   <!-- Crear una web -->
   <section id="web" class="section section--grey">
     <div class="container">
-      <div class="section__intro">
-        <p class="eyebrow">Crear una web</p>
-        <h2>Una web que explique bien lo que haces y facilite que te contacten.</h2>
+      <div class="service-head">
+        <div class="section__intro">
+          <p class="eyebrow">Crear una web</p>
+          <h2>Una web que explique bien lo que haces y facilite que te contacten.</h2>
+        </div>
+        <figure class="service-shot">
+          <img src="img/proyectos/extranjeria-responsive.webp" alt="Web de Solicitud de Extranjería en tablet y móvil" width="900" height="600" loading="lazy">
+          <figcaption>Solicitud de Extranjería, web corporativa · <a href="index.html#extranjeria">Ver el proyecto →</a></figcaption>
+        </figure>
       </div>
       <div class="services-grid services-grid--small">
         <article class="card">
@@ -119,7 +125,7 @@
             <li>Tutorial para editar tus contenidos</li>
             <li>Dos rondas de cambios</li>
           </ul>
-          <p class="card__meta">Plazo orientativo: 2–3 semanas · Ejemplo: <a href="https://solicitudextranjeria.com/" target="_blank" rel="noopener">Solicitud de Extranjería</a></p>
+          <p class="card__meta">Plazo orientativo: 2–3 semanas</p>
           <p class="price">Desde 650 €<small>Hasta 5 páginas</small></p>
         </article>
 
@@ -134,10 +140,16 @@
 
   <!-- Tienda online -->
   <section id="tienda" class="section container">
-    <div class="section__intro">
-      <p class="eyebrow">Tienda online</p>
-      <h2>Vende por internet con un catálogo ordenado y una compra sencilla.</h2>
-      <p class="muted">Trabajo con WooCommerce y PrestaShop, tanto en tiendas nuevas como en tiendas que ya están vendiendo.</p>
+    <div class="service-head">
+      <div class="section__intro">
+        <p class="eyebrow">Tienda online</p>
+        <h2>Vende por internet con un catálogo ordenado y una compra sencilla.</h2>
+        <p class="muted">Trabajo con WooCommerce y PrestaShop, tanto en tiendas nuevas como en tiendas que ya están vendiendo.</p>
+      </div>
+      <figure class="service-shot">
+        <img src="img/proyectos/tubesan-mockup.webp" alt="Ficha de producto de la tienda online de Tubesan en un portátil" width="1238" height="825" loading="lazy">
+        <figcaption>Tubesan, tienda WooCommerce con unos 1.500 productos · <a href="index.html#tubesan">Ver el proyecto →</a></figcaption>
+      </figure>
     </div>
     <div class="services-grid">
       <article class="card">
@@ -152,8 +164,8 @@
           <li>SEO básico de la tienda</li>
           <li>Tutorial para gestionar productos y pedidos</li>
         </ul>
-        <p class="card__meta">Plazo orientativo: 3–5 semanas · Ejemplo: <a href="https://tubesan.es/tienda/" target="_blank" rel="noopener">Tubesan</a></p>
-        <p class="price">Desde 1.300 €<small>Cada 25 productos más, con sus imágenes optimizadas y su SEO: 75 €</small></p>
+        <p class="card__meta">Plazo orientativo: 3–5 semanas</p>
+        <p class="price">Desde 1.300 €<small>Cada 25 productos más, con sus imágenes optimizadas y su SEO: 100 €, si me pasas los datos en una hoja de cálculo y las fotos listas</small></p>
       </article>
 
       <article class="card">
@@ -166,7 +178,7 @@
           <li>Velocidad, estabilidad y actualizaciones</li>
           <li>SEO On-Page, de producto e información para Google Merchant Center</li>
         </ul>
-        <p class="card__meta">Ejemplo: <a href="https://tendencias-pelubelleza.com/" target="_blank" rel="noopener">Tendencias PeluBelleza</a></p>
+        <p class="card__meta">Ejemplo: <a href="index.html#tendencias">Tendencias PeluBelleza</a></p>
         <p class="price">Desde 80 €<small>Revisión con informe. Las mejoras, por horas (30 €/h) o con presupuesto cerrado</small></p>
       </article>
     </div>
@@ -174,11 +186,15 @@
 
   <!-- Mejorar una web existente -->
   <section id="mejorar" class="section section--grey">
-    <div class="container grid-2">
+    <div class="container grid-2 align-start">
       <div>
         <p class="eyebrow">Mejorar tu web actual</p>
         <h2>A veces no hace falta una web nueva, sino mejorar la que tienes.</h2>
         <p class="muted">Si tu web es lenta, se ve mal en el móvil o no lleva a nadie a contactarte, la reviso y te propongo mejoras concretas antes de plantearte rehacerla.</p>
+        <figure class="service-shot service-shot--spaced">
+          <img src="img/proyectos/gracia-reservas.webp" alt="Formulario de reservas de Gracia de la Maza en tablet y móvil" width="1238" height="825" loading="lazy">
+          <figcaption>Gracia de la Maza, reservas online añadidas a una web en marcha · <a href="index.html#gracia">Ver el proyecto →</a></figcaption>
+        </figure>
       </div>
       <article class="card">
         <h3>Revisión y mejora web</h3>
@@ -190,18 +206,23 @@
           <li>SEO aplicado a la web</li>
           <li>Funciones nuevas, como reservas online</li>
         </ul>
-        <p class="card__meta">Ejemplo: <a href="https://graciamaza.es/reservas" target="_blank" rel="noopener">Gracia de la Maza</a>, reservas online para un centro de estética</p>
-        <p class="price">Desde 80 €<small>Revisión con informe. Las mejoras, por horas (30 €/h) o con presupuesto cerrado</small></p>
+        <p class="price">Presupuesto sin compromiso<small>Miro lo que tienes publicado y te paso el alcance y el precio. Las mejoras, por horas (30 €/h) o a precio cerrado</small></p>
       </article>
     </div>
   </section>
 
   <!-- Mantenimiento -->
   <section id="mantenimiento" class="section container">
-    <div class="section__intro">
-      <p class="eyebrow">Mantenimiento</p>
-      <h2>Tu web al día, con copias de seguridad y alguien que responde.</h2>
-      <p class="muted">Para webs y tiendas en WordPress. Mes a mes, sin permanencia, o un año por adelantado con un mes gratis.</p>
+    <div class="service-head">
+      <div class="section__intro">
+        <p class="eyebrow">Mantenimiento</p>
+        <h2>Tu web al día, con copias de seguridad y alguien que responde.</h2>
+        <p class="muted">Para webs y tiendas en WordPress. Mes a mes, sin permanencia, o un año por adelantado con un mes gratis.</p>
+      </div>
+      <figure class="service-shot">
+        <img src="img/proyectos/tendencias-banner.webp" alt="Página de inicio de la tienda Tendencias PeluBelleza en un portátil" width="1332" height="888" loading="lazy">
+        <figcaption>Tendencias PeluBelleza, tienda que mantengo y mejoro de forma continuada · <a href="index.html#tendencias">Ver el proyecto →</a></figcaption>
+      </figure>
     </div>
     <div class="services-grid">
       <article class="card">
@@ -264,6 +285,10 @@
           <p>Cada web incluye dos rondas de cambios. Si necesitas más, o algo que amplía lo acordado, te lo presupuesto aparte antes de hacerlo.</p>
         </details>
         <details>
+          <summary>¿Qué pasa si algo falla después de la entrega?</summary>
+          <p>Durante los 15 días naturales siguientes a la entrega corrijo sin coste cualquier error técnico de lo que he hecho. Los cambios nuevos de diseño o de contenido no entran en esa garantía y se presupuestan aparte.</p>
+        </details>
+        <details>
           <summary>¿De quién es la web cuando está terminada?</summary>
           <p>Tuya. Una vez pagada, te entrego los accesos de administrador y los archivos.</p>
         </details>
@@ -288,6 +313,10 @@
           <p>Sí, como herramienta: para agilizar tareas repetitivas, preparar recursos y revisar textos. El criterio, el diseño y la revisión final de lo que te entrego son siempre míos.</p>
         </details>
         <details>
+          <summary>¿Usas plantillas?</summary>
+          <p>No. Aunque trabaje con un constructor como Elementor, Divi o WPBakery, el diseño es a medida: preparo una propuesta visual a partir de tus referencias y la implemento desde cero. Así tu web se parece a tu negocio y no carga elementos que no usa.</p>
+        </details>
+        <details>
           <summary>¿Con qué herramientas trabajas?</summary>
           <p>WordPress, con Elementor, Divi o WPBakery, y WooCommerce o PrestaShop para las tiendas online. Si tu web ya usa una de ellas, sigo trabajando con la tuya.</p>
         </details>
@@ -305,7 +334,7 @@
       </div>
       <div class="cta__actions">
         <a href="contacto.html" class="btn btn--primary">Cuéntame tu proyecto</a>
-        <p class="muted small">O escríbeme directamente a <a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></p>
+        <p class="muted small">O escríbeme a <a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a> o por <a href="https://wa.me/34658999878?text=Hola%2C%20Alexandra.%20Te%20escribo%20desde%20tu%20web." target="_blank" rel="noopener">WhatsApp</a>.</p>
         <p class="muted small">¿Trabajas en una agencia? <a href="agencias.html">Así colaboro con equipos →</a></p>
       </div>
     </div>
@@ -324,7 +353,7 @@
         <p class="site-footer__title">Contacto</p>
         <ul class="site-footer__list">
           <li><a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://wa.me/34658999878?text=Hola%2C%20Alexandra.%20Te%20escribo%20desde%20tu%20web." target="_blank" rel="noopener">WhatsApp · 658 999 878</a></li>
           <li class="site-footer__note">Jerez de la Frontera · En remoto para toda España</li>
           <li class="site-footer__note">Lunes a viernes, de 9:00 a 18:00</li>
         </ul>
@@ -334,6 +363,7 @@
         <p class="site-footer__title">Redes</p>
         <ul class="site-footer__list">
           <li><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.malt.es/profile/alexandraferrera" target="_blank" rel="noopener">Malt</a></li>
           <li><a href="https://www.behance.net/alexandra-ferrera" target="_blank" rel="noopener">Behance</a></li>
           <li><a href="https://www.figma.com/@alexandraferrer" target="_blank" rel="noopener">Figma</a></li>
           <li><a href="https://github.com/iSaan86" target="_blank" rel="noopener">GitHub</a></li>
