@@ -1036,14 +1036,6 @@ p {
   font-size: 19px;
 }
 
-.offer__price {
-  margin-top: auto;
-  padding-top: 8px;
-  font-family: var(--font-mono);
-  font-size: 17px;
-  font-weight: 600;
-}
-
 /* Varias opciones con su precio dentro de un mismo bloque */
 .offer__prices {
   margin: auto 0 0;
@@ -1240,6 +1232,13 @@ p {
 /* 7. Responsive
    ========================================================================== */
 
+/* Portátil pequeño: en cuatro columnas las filas de precio no caben en una línea */
+@media (max-width: 1199px) {
+  .offer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Tablet y móvil */
 @media (max-width: 899px) {
   .hero__inner,
@@ -1276,7 +1275,6 @@ p {
     order: 0;
   }
 
-  .offer,
   .steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1295,6 +1293,11 @@ p {
 @media (max-width: 767px) {
   .nav .btn {
     display: none;
+  }
+
+  /* En dos columnas las filas de precio vuelven a no caber */
+  .offer {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -1326,7 +1329,6 @@ p {
     transform: translateX(50%);
   }
 
-  .offer,
   .steps,
   .site-footer__grid {
     grid-template-columns: minmax(0, 1fr);
