@@ -56,6 +56,7 @@ Abre la carpeta en VS Code y usa la extensión Live Server, o abre `index.html` 
 
 Busca `PENDIENTE` en el código:
 
-- `cookies.html`: comprobar en la web publicada que no se instala ninguna cookie.
 - `privacidad.html`: actualizar los datos que se recogen si cambia el formulario y confirmar la garantía de transferencia de Netlify y Google.
-- Las etiquetas Open Graph usan `https://alx-estudioweb.netlify.app/`: cambiarlas si se pasa a un dominio propio.
+- Las etiquetas Open Graph usan `https://alx-estudioweb.netlify.app/`: cambiarlas si se pasa a un dominio propio (ver «Al pasar al dominio propio»).
+
+Comprobado el 29/10/2026: ninguna página publicada instala cookies (ni cabeceras `Set-Cookie` ni `document.cookie`).

@@ -448,14 +448,8 @@ p {
 }
 
 .case__title {
-  margin: 8px 0 4px;
+  margin: 8px 0 16px;
   font-size: clamp(24px, 2.6vw, 30px);
-}
-
-.case__meta {
-  margin-bottom: 16px;
-  font-size: 14px;
-  color: var(--muted);
 }
 
 .case__text {
@@ -625,9 +619,8 @@ p {
 }
 
 .quote blockquote p {
-  max-width: 680px;
-  font-size: clamp(18px, 1.8vw, 21px);
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .quote figcaption {
@@ -1085,6 +1078,12 @@ p {
 .about-short h2 {
   max-width: 640px;
   margin-bottom: 24px;
+}
+
+/* La reseña ocupa todo el ancho, bajo la foto y el texto */
+.about-short .quote {
+  grid-column: 1 / -1;
+  margin: 0;
 }
 
 .cta {
