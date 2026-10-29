@@ -88,7 +88,11 @@
         <p class="hero__agency">¿Trabajas en una agencia? <a href="agencias.html">Así colaboro con equipos →</a></p>
         <p class="hero__location"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Desde Jerez de la Frontera, en remoto para toda España.</p>
       </div>
-      <img class="hero__mark" src="img/marca/isotipo-alx.svg" alt="" width="932" height="854">
+      <!-- Escritorio: capturas de proyectos. Tablet y móvil: la X del logotipo asomando por el borde -->
+      <picture class="hero__picture">
+        <source media="(min-width: 900px)" srcset="img/proyectos/alx-hero-dispositivos.webp" width="1200" height="1160">
+        <img class="hero__visual" src="img/marca/isotipo-alx.svg" alt="" width="932" height="854" fetchpriority="high">
+      </picture>
     </div>
   </section>
 

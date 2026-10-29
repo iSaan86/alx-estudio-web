@@ -919,7 +919,8 @@ p {
 /* 6. Secciones por página
    ========================================================================== */
 
-/* Inicio: portada con la X del logotipo recortada por el borde */
+/* Inicio: portada con capturas de proyectos en escritorio y la X del logotipo
+   recortada por el borde en tablet y móvil */
 .hero {
   position: relative;
   overflow: hidden;
@@ -927,7 +928,7 @@ p {
 
 .hero__inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   gap: clamp(32px, 5vw, 64px);
   align-items: center;
   padding-block: clamp(48px, 7vw, 104px) clamp(56px, 8vw, 112px);
@@ -960,15 +961,13 @@ p {
   z-index: 1;
 }
 
-/* La X se ancla al centro de la página: en portátiles la corta el borde y en
-   pantallas anchas se queda cerca del texto en lugar de irse a la derecha */
-.hero__mark {
-  position: absolute;
-  top: 50%;
-  left: calc(50% + 240px);
-  width: 560px;
-  max-width: none;
-  transform: translateY(-50%);
+/* Un solo <img>: según el ancho, el navegador descarga las capturas o la X */
+.hero__picture {
+  display: block;
+}
+
+.hero__visual {
+  width: 100%;
 }
 
 /* Resumen de servicios y tarifas (Inicio, Servicios y Agencias) */
@@ -1257,8 +1256,9 @@ p {
     padding-right: clamp(40px, 9vw, 72px);
   }
 
-  .hero__mark {
-    left: auto;
+  .hero__picture {
+    position: absolute;
+    top: 50%;
     right: 0;
     width: clamp(180px, 36vw, 300px);
     transform: translate(52%, -50%);
@@ -1323,7 +1323,7 @@ p {
     font-size: 14px;
   }
 
-  .hero__mark {
+  .hero__picture {
     top: 72px;
     transform: translateX(50%);
   }
