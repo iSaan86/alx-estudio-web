@@ -197,10 +197,6 @@ p {
   align-items: center;
 }
 
-.align-start {
-  align-items: start;
-}
-
 
 /* 4. Componentes
    ========================================================================== */
@@ -617,15 +613,15 @@ p {
   display: flex;
 }
 
-/* Cita de cliente */
+/* Cita de cliente: bloque melocotón para separarla del texto propio */
 .quote {
   margin: 40px 0 0;
-  padding-top: 32px;
-  border-top: 1px solid var(--line);
+  padding: clamp(24px, 3vw, 36px);
+  background: var(--peach-soft);
 }
 
 .quote blockquote {
-  margin: 0;
+  margin: 12px 0 0;
 }
 
 .quote blockquote p {
@@ -642,11 +638,6 @@ p {
 
 .quote strong {
   color: var(--ink);
-}
-
-/* Dentro de un caso destacado la columna es estrecha: la cita, más contenida */
-.case .quote blockquote p {
-  font-size: 18px;
 }
 
 /* Pasos numerados */
@@ -958,12 +949,6 @@ p {
   font-size: var(--text-small);
 }
 
-.hero__clients {
-  margin-bottom: 12px;
-  font-size: var(--text-small);
-  color: var(--muted);
-}
-
 .hero__location {
   display: flex;
   align-items: center;
@@ -1013,6 +998,25 @@ p {
   margin: 40px 0 0;
   padding: 0;
   list-style: none;
+}
+
+/* Servicios: captura de un proyecto encima de cada bloque del índice */
+.offer__entry {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offer__entry .offer__item {
+  flex: 1;
+}
+
+.offer__media {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: var(--bg-alt);
 }
 
 .offer__link {
@@ -1158,39 +1162,6 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 }
 
-/* Servicios: introducción de sección con la captura de un proyecto al lado */
-.service-head {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(32px, 5vw, 64px);
-  align-items: center;
-  margin-bottom: clamp(32px, 4vw, 48px);
-}
-
-.service-head .section__intro {
-  margin-bottom: 0;
-}
-
-.service-shot {
-  margin: 0;
-}
-
-.service-shot--spaced {
-  margin-top: 32px;
-}
-
-.service-shot img {
-  width: 100%;
-  border: 1px solid var(--line);
-  background: var(--bg-alt);
-}
-
-.service-shot figcaption {
-  margin-top: 10px;
-  font-size: var(--text-small);
-  color: var(--muted);
-}
-
 .card__label {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -1277,7 +1248,6 @@ p {
   .about,
   .about-short,
   .contact,
-  .service-head,
   .grid-2,
   .grid-auto--three,
   .form__row {
