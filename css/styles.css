@@ -189,10 +189,6 @@ p {
   gap: 24px;
 }
 
-.grid-auto--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .align-center {
   align-items: center;
 }
@@ -1246,7 +1242,6 @@ p {
   .about-short,
   .contact,
   .grid-2,
-  .grid-auto--three,
   .form__row {
     grid-template-columns: minmax(0, 1fr);
   }
