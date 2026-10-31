@@ -1246,8 +1246,9 @@ p {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  /* En una columna, la X asoma por el borde derecho y el texto le deja sitio */
-  .hero__content {
+  /* En una columna, la X asoma por el borde derecho y el texto le deja sitio.
+     Los botones quedan por debajo de la X y usan todo el ancho */
+  .hero__content > :not(.btn-group) {
     padding-right: clamp(40px, 9vw, 72px);
   }
 
