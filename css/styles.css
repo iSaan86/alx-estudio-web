@@ -935,7 +935,7 @@ p {
 }
 
 .hero__agency {
-  margin-bottom: 12px;
+  margin-bottom: clamp(16px, 3vw, 22px);
   font-size: var(--text-small);
 }
 
@@ -944,6 +944,7 @@ p {
   align-items: center;
   gap: 10px;
   font-size: var(--text-note);
+  line-height: 1.35;
   color: var(--muted);
 }
 
@@ -1246,10 +1247,18 @@ p {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  /* En una columna, la X asoma por el borde derecho y el texto le deja sitio.
-     Los botones quedan por debajo de la X y usan todo el ancho */
-  .hero__content > :not(.btn-group) {
-    padding-right: clamp(40px, 9vw, 72px);
+  /* En una columna, la X asoma por el borde derecho: el título y la entradilla
+     le dejan sitio y lo que queda por debajo de ella usa todo el ancho */
+  .hero {
+    --hero-mark-space: clamp(40px, 9vw, 72px);
+  }
+
+  .hero h1 {
+    padding-right: var(--hero-mark-space);
+  }
+
+  .hero .lead {
+    max-width: min(620px, 100% - var(--hero-mark-space));
   }
 
   .hero__picture {
