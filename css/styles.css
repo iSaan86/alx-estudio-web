@@ -476,6 +476,7 @@ p {
 }
 
 .gallery__slide {
+  position: relative;
   margin: 0;
   scroll-snap-align: start;
 }
@@ -541,7 +542,17 @@ p {
   color: var(--ink);
 }
 
-/* Vista ampliada de una imagen */
+/* Botón para ampliar un vídeo: el clic en el vídeo lo reproduce */
+.gallery__expand {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vista ampliada de imágenes y vídeos */
 .lightbox {
   width: min(1240px, 100% - 32px);
   max-width: none;
@@ -559,10 +570,15 @@ p {
   margin: 0;
 }
 
-.lightbox img {
+.lightbox img,
+.lightbox video {
   width: 100%;
   max-height: calc(100vh - 140px);
   object-fit: contain;
+}
+
+.lightbox [hidden] {
+  display: none;
 }
 
 .lightbox__caption {

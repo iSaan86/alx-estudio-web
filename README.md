@@ -17,11 +17,11 @@ aviso-legal.html    Aviso legal
 privacidad.html     Política de privacidad
 cookies.html        Política de cookies
 css/styles.css      Estilos de toda la web, ordenados por secciones
-js/main.js          Galerías de proyectos (botones, contador y vista ampliada) y botón de volver arriba
+js/main.js          Galerías de proyectos (botones, contador y vista ampliada de imágenes y vídeos) y botón de volver arriba
 fonts/              IBM Plex Mono (500 y 600) alojada en la web, con su licencia OFL
 img/marca/          Logotipos ALX en SVG, foto de Alexandra e imagen para redes (Open Graph)
 img/proyectos/      Capturas de proyectos en WebP
-video/              Vídeos de recorrido de Tubesan y Omaïlab, cada uno con su portada en WebP
+video/              Vídeos de recorrido de Tubesan, Omaïlab y The Dragon Chamber Games, cada uno con su portada en WebP
 netlify.toml        Configuración de publicación, cabeceras de seguridad y caché
 ```
 
