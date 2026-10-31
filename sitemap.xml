@@ -2,23 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alx-estudioweb.netlify.app/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://alx-estudioweb.netlify.app/sobre-mi</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://alx-estudioweb.netlify.app/servicios</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://alx-estudioweb.netlify.app/proyectos</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://alx-estudioweb.netlify.app/agencias</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://alx-estudioweb.netlify.app/contacto</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://alx-estudioweb.netlify.app/aviso-legal</loc>

@@ -10,6 +10,7 @@ Web estática hecha a mano con HTML5, CSS3 y un poco de JavaScript (solo para la
 index.html          Inicio
 sobre-mi.html       Sobre mí
 servicios.html      Servicios y precios para negocios
+proyectos.html      Todos los proyectos
 agencias.html       Colaboración con agencias, estudios y consultoras
 contacto.html       Contacto (formulario con Netlify Forms)
 gracias.html        Confirmación tras enviar el formulario

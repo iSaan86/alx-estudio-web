@@ -32,11 +32,11 @@
       <img src="img/marca/logo-alx.svg" alt="ALX Estudio Web" width="1636" height="854">
     </a>
     <nav class="nav" aria-label="Principal">
-      <a href="index.html">Inicio</a>
-      <a href="sobre-mi.html">Sobre mí</a>
       <a href="servicios.html">Servicios</a>
+      <a href="proyectos.html">Proyectos</a>
       <a href="agencias.html">Agencias</a>
-      <a href="contacto.html" aria-current="page">Contacto</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="contacto.html" class="btn btn--primary btn--small" aria-current="page">Contacto</a>
     </nav>
   </div>
 </header>
@@ -46,15 +46,12 @@
     <div>
       <p class="eyebrow">Contacto</p>
       <h1>Hablemos de tu próximo proyecto.</h1>
-      <p class="lead">Tanto si tienes un negocio como si trabajas en una agencia, cuéntame qué necesitas y para cuándo. Te respondo con una propuesta, sin compromiso.</p>
+      <p class="lead">Cuéntame qué necesitas y para cuándo. Te respondo normalmente en 24 horas laborables y, si encaja, te preparo un presupuesto sin compromiso.</p>
       <dl class="contact-info">
         <div><dt>Correo</dt><dd><a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></dd></div>
         <div><dt>WhatsApp</dt><dd><a href="https://wa.me/34658999878?text=Hola%2C%20Alexandra.%20Te%20escribo%20desde%20tu%20web." target="_blank" rel="noopener">658 999 878</a></dd></div>
-        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/alexandra-ferrera-arenas/" target="_blank" rel="noopener">Alexandra Ferrera Arenas</a></dd></div>
         <div><dt>Malt</dt><dd><a href="https://www.malt.es/profile/alexandraferrera" target="_blank" rel="noopener">Perfil y recomendaciones</a></dd></div>
         <div><dt>Horario</dt><dd>Lunes a viernes, de 9:00 a 18:00</dd></div>
-        <div><dt>Respuesta</dt><dd>Normalmente en 24 horas laborables</dd></div>
-        <div><dt>Zona</dt><dd>Jerez de la Frontera, en remoto para toda España</dd></div>
       </dl>
     </div>
 
@@ -64,6 +61,7 @@
       <p class="visually-hidden"><label>No rellenes este campo: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
       <h2>Cuéntame tu proyecto</h2>
+      <p class="muted small">Solo son obligatorios tu nombre, tu correo y tu mensaje.</p>
 
       <div class="form__row">
         <div class="field">
@@ -78,7 +76,7 @@
 
       <div class="form__row">
         <div class="field">
-          <label for="perfil">¿Quién eres?</label>
+          <label for="perfil">¿Qué te describe mejor?</label>
           <select id="perfil" name="perfil">
             <option value="">Elige una opción</option>
             <option>Negocio, autónomo o profesional</option>
@@ -87,7 +85,7 @@
           </select>
         </div>
         <div class="field">
-          <label for="empresa">Empresa o agencia (opcional)</label>
+          <label for="empresa">Empresa o agencia</label>
           <input id="empresa" name="empresa" type="text" autocomplete="organization">
         </div>
       </div>
@@ -101,6 +99,7 @@
             <option>Una tienda online</option>
             <option>Mejorar mi web o mi tienda</option>
             <option>Mantenimiento</option>
+            <option>Un encargo de prueba para mi agencia</option>
             <option>Un encargo para mi agencia</option>
             <option>Aún no lo sé</option>
           </select>
@@ -142,18 +141,30 @@
 <footer class="site-footer">
   <div class="container">
     <div class="site-footer__grid">
-      <div>
+      <div class="site-footer__brand">
         <img class="site-footer__logo" src="img/marca/logo-alx-blanco.svg" alt="ALX Estudio Web" width="1636" height="854">
         <p class="site-footer__tagline">Diseño y desarrollo web con visión creativa y estratégica.</p>
       </div>
 
-      <div>
+      <div class="site-footer__contact">
         <p class="site-footer__title">Contacto</p>
         <ul class="site-footer__list">
           <li><a href="mailto:alx.estudioweb@gmail.com">alx.estudioweb@gmail.com</a></li>
           <li><a href="https://wa.me/34658999878?text=Hola%2C%20Alexandra.%20Te%20escribo%20desde%20tu%20web." target="_blank" rel="noopener">WhatsApp</a></li>
           <li class="site-footer__note">Jerez de la Frontera · En remoto para toda España</li>
           <li class="site-footer__note">Lunes a viernes, de 9:00 a 18:00</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="site-footer__title">Páginas</p>
+        <ul class="site-footer__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="agencias.html">Agencias</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
 
