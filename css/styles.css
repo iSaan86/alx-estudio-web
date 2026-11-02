@@ -7,6 +7,7 @@
    5. Cabecera y pie
    6. Secciones por página
    7. Responsive
+   8. Movimiento
    ========================================================================== */
 
 
@@ -44,6 +45,11 @@
   --gutter: clamp(16px, 4vw, 40px);
   --section-space: clamp(64px, 8vw, 112px);
   --container: 1200px;
+
+  /* Movimiento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-fast: 0.2s;
+  --motion-slow: 0.45s;
 }
 
 
@@ -270,6 +276,12 @@ p {
   color: var(--violet);
 }
 
+/* Flecha de los enlaces: en su propia caja para poder moverse al pasar el ratón */
+.arrow {
+  display: inline-block;
+  margin-left: 0.28em;
+}
+
 /* Botones */
 .btn {
   display: inline-flex;
@@ -399,6 +411,11 @@ p {
 }
 
 /* Inicio: una sola captura en lugar de galería */
+.project-card > a {
+  display: block;
+  overflow: hidden;
+}
+
 .project-card__media {
   width: 100%;
   aspect-ratio: 3 / 2;
@@ -486,6 +503,7 @@ p {
 
 .gallery__slide a {
   display: block;
+  overflow: hidden;
   cursor: zoom-in;
 }
 
@@ -1000,11 +1018,21 @@ p {
 }
 
 .offer__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 20px;
-  border-top: 2px solid var(--ink);
+  padding-top: 22px;
+}
+
+/* La línea superior es un elemento aparte para poder dibujarse al aparecer */
+.offer__item::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: var(--ink);
+  transform-origin: left;
 }
 
 /* En Servicios funciona como índice de la página */
@@ -1435,5 +1463,198 @@ p {
   .gallery__btn,
   .to-top {
     transition: none;
+  }
+}
+
+
+/* 8. Movimiento
+   ========================================================================== */
+
+/* Solo se animan posición, escala y opacidad: no recolocan nada en la página.
+   Las propiedades translate, scale y rotate se suman al transform que ya tenga
+   cada elemento, así no hay que repetirlo por tamaños de pantalla. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    translate: 0 var(--rise, 16px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    translate: 48px 0;
+  }
+}
+
+@keyframes mark-slide {
+  from {
+    translate: 40% 0;
+  }
+}
+
+@keyframes draw {
+  from {
+    scale: 0 1;
+  }
+}
+
+/* El cuadrado coral aparece girado y se coloca recto, como en la X del logotipo */
+@keyframes square-settle {
+  from {
+    rotate: 45deg;
+    scale: 0;
+  }
+}
+
+/* Al imprimir o con «reducir movimiento» activado no se aplica nada de esto */
+@media screen and (prefers-reduced-motion: no-preference) {
+  /* Fundido entre páginas con la cabecera quieta */
+  @view-transition {
+    navigation: auto;
+  }
+
+  .site-header {
+    view-transition-name: site-header;
+  }
+
+  /* Portada: el H1 no espera, para que la página se perciba cargada cuanto antes */
+  .hero__content > * {
+    animation: rise var(--motion-slow) var(--ease-out) backwards;
+  }
+
+  .hero__content > :nth-child(3) {
+    animation-delay: 60ms;
+  }
+
+  .hero__content > :nth-child(4) {
+    animation-delay: 120ms;
+  }
+
+  .hero__content > :nth-child(n + 5) {
+    animation-delay: 180ms;
+  }
+
+  .hero__picture {
+    --rise: 24px;
+    animation: rise var(--motion-slow) var(--ease-out) 120ms backwards;
+  }
+
+  /* En tablet y móvil la imagen es la X, que entra desde el borde */
+  @media (max-width: 899px) {
+    .hero__picture {
+      animation-name: slide-in;
+    }
+  }
+
+  /* Entrada de bloques al desplazarse: js/main.js cambia .reveal por .reveal--visible */
+  .reveal {
+    opacity: 0;
+  }
+
+  .reveal--visible {
+    animation: rise var(--motion-slow) var(--ease-out) var(--reveal-delay, 0s) backwards;
+  }
+
+  /* Los bloques de una misma fila entran escalonados; en una columna, no hace falta */
+  @media (min-width: 768px) {
+    .reveal--visible:nth-child(2) {
+      --reveal-delay: 60ms;
+    }
+
+    .reveal--visible:nth-child(3) {
+      --reveal-delay: 120ms;
+    }
+
+    .reveal--visible:nth-child(4) {
+      --reveal-delay: 180ms;
+    }
+  }
+
+  main > :first-child .eyebrow::before,
+  .reveal--visible .eyebrow::before {
+    animation: square-settle var(--motion-slow) var(--ease-out) 100ms backwards;
+  }
+
+  .reveal--visible.offer__item::before,
+  .reveal--visible .offer__item::before {
+    animation: draw var(--motion-slow) var(--ease-out) calc(var(--reveal-delay, 0s) + 80ms) backwards;
+  }
+
+  /* La X de las llamadas finales avanza con el desplazamiento y se queda en su
+     sitio. La línea de tiempo va en la sección porque su overflow: hidden impide
+     que la X siga el desplazamiento de la página. Sin soporte, la X está quieta. */
+  @supports (animation-timeline: view()) {
+    .section--accent {
+      view-timeline: --cta-final block;
+    }
+
+    .section__mark {
+      animation: mark-slide linear backwards;
+      animation-timeline: --cta-final;
+      animation-range: entry 0% entry 100%;
+    }
+  }
+
+  .faq details[open] p {
+    --rise: 8px;
+    animation: rise var(--motion-fast) var(--ease-out) backwards;
+  }
+
+  .lightbox[open],
+  .lightbox[open]::backdrop,
+  .to-top--visible {
+    animation: fade var(--motion-fast) ease-out;
+  }
+
+  .btn:active,
+  .gallery__btn:active:enabled {
+    translate: 0 1px;
+  }
+}
+
+/* Solo con ratón: en pantallas táctiles el estado hover se queda pegado al tocar */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .project-card__media,
+  .gallery__slide a img {
+    transition: scale 0.4s var(--ease-out);
+  }
+
+  .project-card:hover .project-card__media,
+  .gallery__slide a:hover img {
+    scale: 1.03;
+  }
+
+  .arrow {
+    transition: translate var(--motion-fast) var(--ease-out);
+  }
+
+  a:hover .arrow {
+    translate: 4px 0;
+  }
+
+  .nav a:not(.btn) {
+    position: relative;
+  }
+
+  .nav a:not(.btn)::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 6px;
+    height: 2px;
+    background: var(--violet);
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale var(--motion-fast) var(--ease-out);
+  }
+
+  .nav a:not(.btn):hover::after {
+    scale: 1;
   }
 }

@@ -1,8 +1,9 @@
 /* ==========================================================================
-   ALX Estudio Web · Galerías de proyectos y botón de volver arriba
+   ALX Estudio Web · Galerías, botón de volver arriba y entrada de bloques
    Sin JavaScript, cada galería se desliza con el dedo o la barra de
    desplazamiento y cada imagen abre su archivo. Este script añade los
-   botones, el contador y la vista ampliada de imágenes y vídeos.
+   botones, el contador y la vista ampliada de imágenes y vídeos. Todo el
+   contenido se ve igual sin él: la entrada de bloques es solo un añadido.
    ========================================================================== */
 
 const galleries = document.querySelectorAll('.gallery');
@@ -19,6 +20,32 @@ if (toTop) {
   };
   window.addEventListener('scroll', toggleToTop, { passive: true });
   toggleToTop();
+}
+
+if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  setupReveal();
+}
+
+// Entrada suave de los bloques al desplazarse, una sola vez. Lo que ya se ve al
+// cargar no se oculta, para que nada parpadee.
+function setupReveal() {
+  const selector = '.section__intro, .project-card, .card, .offer > *, .steps > li, .case > *, .quote, .about-short > *, .grid-2 > *, .cta > *, .faq';
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(({ target, isIntersecting }) => {
+      if (!isIntersecting) return;
+      target.classList.replace('reveal', 'reveal--visible');
+      observer.unobserve(target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll(selector).forEach((block) => {
+    // Un bloque dentro de otro ya entra con él
+    if (block.parentElement.closest(selector)) return;
+    if (block.getBoundingClientRect().top < window.innerHeight) return;
+    block.classList.add('reveal');
+    observer.observe(block);
+  });
 }
 
 function setupGallery(gallery) {
