@@ -322,6 +322,12 @@ p {
   min-height: 44px;
   padding: 8px 18px;
   font-size: var(--text-small);
+  background: var(--violet);
+  color: var(--white);
+  border: 0px;
+}
+.btn--small:hover {
+  background: var(--ink)
 }
 
 .btn-group {
